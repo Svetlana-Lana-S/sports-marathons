@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,+BAA+B;CAC/C",
+    "sources": [
+        "marathons_types.scss"
+    ],
+    "names": [],
+    "file": "marathons_types.css"
+}
