@@ -36,26 +36,27 @@ body {
   background: linear-gradient(to top left, #FDC332 50%, white 50%);
   position: relative;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .image__item1,
-.image__item2,
 .image__item3 {
-  width: 50%;
+  width: 65%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .image__item2 {
-  align-self: end;
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   right: 30px;
-  top: 30%;
+  top: 110px;
 }
 
 .image__item3 {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .services__text {
