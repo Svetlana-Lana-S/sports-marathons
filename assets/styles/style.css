@@ -24,4 +24,126 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+
+/*form*/
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.form__content {
+  max-width: 450px;
+  margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btns__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.btn__nav {
+  max-width: 49%;
+  min-width: 49%;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(37, 49, 49, 0.1);
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #253131;
+}
+
+.btn__nav-active {
+  background-color: #FDC332;
+  color: #FFFFFF !important;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #253131;
+}
+
+.form__content input {
+  margin-bottom: 10px;
+  padding: 0 18px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(37, 49, 49, 0.1);
+  border-radius: 5px;
+  font-family: 'Montserrat', Times, sans-serif;
+  font-size: 16px;
+}
+
+.standart {
+  background-color: #fff;
+  color: rgba(37, 49, 49, 0.7);
+}
+
+.btn__form {
+  background-color: #253131;
+  font-weight: 500;
+  color: #fff;
+}
+
+.forgot__password {
+  display: block;
+  text-align: center;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+.social__networks {
+  margin: 35px 0px 45px 0px;
+  text-align: center;
+}
+
+.social__networks-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #253131;
+}
+
+.social__networks-icons a {
+  margin-right: 43px;
+}
+
+.social__networks-icons a:last-child {
+  margin-right: 0px;
+}
+
+.social__networks-icons img {
+  width: 48px;
+  height: 48px;
+}
+
+.form__copyright {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(37, 49, 49, 0.7);
+}
+
+.form__copyright a {
+  color: #253131;
+}
 /*# sourceMappingURL=style.css.map */
