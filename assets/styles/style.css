@@ -30,7 +30,10 @@ body {
 .shapka a {
   text-decoration: none;
 }
-.shapka p:hover {
+.shapka .marathons:hover,
+.shapka .gallery:hover,
+.shapka .services:hover,
+.shapka .account:hover {
   text-decoration: underline;
 }
 .shapka .account {
@@ -49,4 +52,60 @@ body {
 .shapka .logo {
   width: 200px;
   height: 60px;
+}
+.shapka .options {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.8fr;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
+.shapka .marathons {
+  margin: 10px;
+  color: #FFFFFF;
+}
+.shapka .personal_account {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media screen and (max-width: 985px) {
+  .shapka {
+    padding: 0;
+    font-size: 10px;
+  }
+  .shapka .logo {
+    width: 100px;
+    margin-bottom: -10px;
+  }
+  .shapka .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .shapka .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    gap: 0;
+    grid-row: 2/2;
+    grid-column: 1/4;
+  }
+  .shapka .logotype {
+    display: grid;
+    justify-content: center;
+    grid-row: 1/2;
+    grid-column: 1/5;
+  }
+  .shapka .marathons {
+    margin: 0;
+  }
+  .shapka .personal_account {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-row: 2/2;
+    grid-column: 4/4;
+  }
 }/*# sourceMappingURL=style.css.map */
