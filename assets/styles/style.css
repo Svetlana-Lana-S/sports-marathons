@@ -16,4 +16,32 @@ body {
 
 .content {
   flex: 1 1 auto;
+}
+
+.shapka {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #253131;
+  padding: 24px;
+}
+.shapka a {
+  text-decoration: none;
+}
+.shapka p:hover {
+  text-decoration: underline;
+}
+.shapka .account {
+  color: #fdc332;
+}
+.shapka .marathons,
+.shapka .gallery,
+.shapka .services {
+  color: rgba(255, 255, 255, 0.6);
+}
+.shapka .container {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

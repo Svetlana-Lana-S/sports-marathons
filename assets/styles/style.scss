@@ -18,3 +18,36 @@ body {
 .content {
     flex: 1 1 auto;
 }
+
+.shapka {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(37, 49, 49, 1);
+    padding: 24px;
+
+    a {
+        text-decoration: none;
+    }
+
+    p:hover {
+        text-decoration: underline;
+    }
+
+    .account {
+        color: rgba(253, 195, 50, 1);
+    }
+
+    .marathons,
+    .gallery,
+    .services {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
