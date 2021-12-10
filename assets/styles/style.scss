@@ -18,3 +18,20 @@ body {
 .content {
     flex: 1 1 auto;
 }
+
+/* services */
+.services {
+    grid-template-areas: "services__image services__text";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid 4px red;
+}
+
+.services__image {
+    grid-area: services__image;
+}
+
+.services__text {
+    grid-area: services__text;
+    border: solid 4px red;
+}
