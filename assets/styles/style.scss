@@ -21,17 +21,65 @@ body {
 
 /* services */
 .services {
+    display: grid;
     grid-template-areas: "services__image services__text";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
-    border: solid 4px red;
+    background: #FDC332;
+    /* column-gap: 20px; */
 }
 
 .services__image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     grid-area: services__image;
+    background: linear-gradient(to top left, #FDC332 50%, white 50%);
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+%image_width {
+    width: 50%;
+    object-fit: cover;
+}
+
+.image__item1,
+.image__item2,
+.image__item3 {
+    @extend %image_width
+}
+
+.image__item2 {
+    align-self: end;
+    position: absolute;
+    right: 30px;
+    top: 30%;
+}
+
+.image__item3 {
+    margin-top: 30px;
 }
 
 .services__text {
     grid-area: services__text;
-    border: solid 4px red;
+    align-self: center;
+    color: #253131;
+}
+
+.services__text {
+
+    h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    li {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 20px;
+    }
 }
