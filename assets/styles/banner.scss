@@ -1,0 +1,19 @@
+.company_banner {
+    display: grid;
+    grid-template-columns: auto 733px;
+    background-color: #253131;
+    height: 718px;
+
+    .info {
+        width: auto;
+
+    }
+
+    .img {
+        width: 733px;
+
+        img {
+            width: 733px;
+        }
+    }
+}

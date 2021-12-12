@@ -1,0 +1,21 @@
+.company_banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 733px;
+      grid-template-columns: auto 733px;
+  background-color: #253131;
+  height: 718px;
+}
+
+.company_banner .info {
+  width: auto;
+}
+
+.company_banner .img {
+  width: 733px;
+}
+
+.company_banner .img img {
+  width: 733px;
+}
+/*# sourceMappingURL=banner.css.map */
