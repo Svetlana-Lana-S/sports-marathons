@@ -22,8 +22,6 @@ body {
     flex: 1 1 auto;
 }
 
-$bg-color: #FDC332;
-$text-color: #253131;
 
 /* services */
 .services {
@@ -31,7 +29,7 @@ $text-color: #253131;
     grid-template-areas: "services__image services__text";
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
-    background: $bg-color;
+    background: $yellow-color;
     /* column-gap: 20px; */
 }
 
@@ -40,7 +38,7 @@ $text-color: #253131;
     flex-direction: column;
     flex-wrap: wrap;
     grid-area: services__image;
-    background: linear-gradient(to top left, $bg-color 50%, white 50%);
+    background: linear-gradient(to top left, $yellow-color 50%, white 50%);
     position: relative;
     align-items: flex-start;
     justify-content: space-between;
@@ -71,7 +69,7 @@ $text-color: #253131;
 .services__text {
     grid-area: services__text;
     align-self: center;
-    color: $text-color;
+    color: $swamp-color;
 }
 
 .services__text {
