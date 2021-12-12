@@ -8,14 +8,46 @@
 }
 
 .company_banner .info {
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 70px;
   width: auto;
 }
 
-.company_banner .img {
-  width: 733px;
+.company_banner .info .title {
+  color: #FFFFFF;
+  font-size: 75px;
 }
 
-.company_banner .img img {
+.company_banner .info .title span {
+  color: #FDC332;
+}
+
+.company_banner .info .text {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.company_banner .info .text span {
+  color: #FDC332;
+  white-space: nowrap;
+}
+
+.company_banner .info .button_container {
+  margin-top: 75px;
+}
+
+.company_banner .info .button_container .button {
+  background-color: #FDC332;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: #253131;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.company_banner img {
   width: 733px;
 }
 /*# sourceMappingURL=banner.css.map */

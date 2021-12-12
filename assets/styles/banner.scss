@@ -5,15 +5,46 @@
     height: 718px;
 
     .info {
+        margin-top: 200px;
+        margin-left: 100px;
+        margin-right: 70px;
         width: auto;
 
+        .title {
+            color: #FFFFFF;
+            font-size: 75px;
+
+            span {
+                color: #FDC332;
+            }
+        }
+
+        .text {
+            margin-top: 50px;
+            font-size: 16px;
+            color: #FFFFFF;
+
+            span {
+                color: #FDC332;
+                white-space: nowrap;
+            }
+        }
+
+        .button_container {
+            margin-top: 75px;
+
+            .button {
+                background-color: #FDC332;
+                padding: 15px 40px;
+                text-decoration: none;
+                color: #253131;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
     }
 
-    .img {
+    img {
         width: 733px;
-
-        img {
-            width: 733px;
-        }
     }
 }
