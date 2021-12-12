@@ -13,7 +13,7 @@ body {
           flex-direction: column;
 }
 
-.container {
+.content_container {
   max-width: 1440px;
   margin: 0px auto;
 }
@@ -22,5 +22,181 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.shapka {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #253131;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shapka a {
+  text-decoration: none;
+}
+
+.shapka .marathons:hover,
+.shapka .gallery:hover,
+.shapka .services:hover,
+.shapka .account:hover {
+  text-decoration: underline;
+}
+
+.shapka .account {
+  color: #fdc332;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shapka .marathons,
+.shapka .gallery,
+.shapka .services {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.shapka .logo {
+  width: 200px;
+  height: 60px;
+}
+
+.shapka .options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.5fr 0.8fr;
+      grid-template-columns: 1fr 0.5fr 0.8fr;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.shapka .marathons {
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+.shapka .personal_account {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 985px) {
+  .shapka {
+    padding: 0;
+    font-size: 11px;
+    line-height: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+  .shapka .logo {
+    width: 125px;
+    margin-bottom: -10px;
+  }
+  .shapka .options {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .shapka .logotype {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  .shapka .marathons {
+    margin: 0;
+  }
+  .shapka .personal_account {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    -ms-grid-column: 4;
+    grid-column: 4/4;
+    padding-right: 3px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 985px) {
+  .shapka {
+    padding: 0;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shapka .logo {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  .shapka .options {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 5px;
+  }
+  .shapka .marathons {
+    margin: 10px;
+    color: #FFFFFF;
+  }
+  .shapka .personal_account {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
