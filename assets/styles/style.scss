@@ -32,6 +32,11 @@ body {
         text-decoration: none;
     }
 
+    a:active {
+        color: #FFFFFF;
+        border-bottom: 1px dashed;
+    }
+
     .marathons:hover,
     .gallery:hover,
     .services:hover,
@@ -65,7 +70,6 @@ body {
 
     .marathons {
         margin: 10px;
-        color: #FFFFFF;
     }
 
     .personal_account {

@@ -31,6 +31,10 @@ body {
 .shapka a {
   text-decoration: none;
 }
+.shapka a:active {
+  color: #FFFFFF;
+  border-bottom: 1px dashed;
+}
 .shapka .marathons:hover,
 .shapka .gallery:hover,
 .shapka .services:hover,
@@ -59,7 +63,6 @@ body {
 }
 .shapka .marathons {
   margin: 10px;
-  color: #FFFFFF;
 }
 .shapka .personal_account {
   display: grid;
