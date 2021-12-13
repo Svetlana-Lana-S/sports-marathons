@@ -56,10 +56,4 @@ body {
 .gallery {
   background: #253131;
 }
-
-.gallery {
-  background-position: 20px 10px;
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, #253131), color-stop(50%, white));
-  background: linear-gradient(to top left, #253131 50%, white 50%);
-}
 /*# sourceMappingURL=style.css.map */
