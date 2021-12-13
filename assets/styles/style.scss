@@ -8,15 +8,13 @@ body {
 }
 
 .wrapper {
-    min-height: 100vh;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
 }
 
-.container {
-    max-width: 1180px;
+.content_container {
+    max-width: 1440px;
     margin: 0px auto;
 }
 
