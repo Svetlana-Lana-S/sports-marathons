@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 
-.container {
+.content_container {
   max-width: 1440px;
   margin: 0px auto;
 }
@@ -33,7 +33,7 @@ body {
 }
 .shapka a:active {
   color: #FFFFFF;
-  border-bottom: 1px dashed;
+  /*        border-bottom: 1px dashed;*/
 }
 .shapka .marathons:hover,
 .shapka .gallery:hover,
