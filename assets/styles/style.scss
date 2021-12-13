@@ -32,10 +32,11 @@ body {
     padding-bottom: 20px;
     a {
         text-decoration: none;
-        a:hover {
-            color: inherit;
-        }
     }
+}
+
+.form a:hover {
+    color: inherit;
 }
 
 .form__content {
