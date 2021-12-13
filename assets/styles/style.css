@@ -21,7 +21,7 @@ body {
 .services {
   display: grid;
   grid-template-areas: "services__image services__text";
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 5fr 4fr;
   grid-template-rows: 1fr;
   background: #FDC332;
   /* column-gap: 20px; */
@@ -40,18 +40,14 @@ body {
 
 .image__item1,
 .image__item3 {
-  width: 65%;
+  width: 60%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .image__item2 {
-  width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  right: 30px;
-  top: 110px;
 }
 
 .image__item3 {
@@ -62,6 +58,7 @@ body {
   grid-area: services__text;
   align-self: center;
   color: #253131;
+  margin-right: 50px;
 }
 
 .services__text h2 {
@@ -74,4 +71,45 @@ body {
   font-size: 24px;
   line-height: 36px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    grid-template-areas: "services__text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .services__image {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .services {
+    display: grid;
+    grid-template-areas: "services__image services__text";
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1fr;
+  }
+
+  .image__item1,
+.image__item3 {
+    display: none;
+  }
+
+  .image__item2 {
+    width: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image__item2 {
+    width: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    right: 40px;
+    top: 15vh;
+  }
 }/*# sourceMappingURL=style.css.map */
