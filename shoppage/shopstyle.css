@@ -9,7 +9,7 @@ body {
   flex-direction: column;
 }
 
-.container {
+.content_container {
   max-width: 1180px;
   margin: 0px auto;
 }
