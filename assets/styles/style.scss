@@ -23,3 +23,33 @@ body {
 .content {
     flex: 1 1 auto;
 }
+
+/*Галерея*/
+
+.gallery__images {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat (2, 200px);
+}
+
+.gallery__images>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__title {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery {
+    background: $swamp-color;
+}
+
+.gallery {
+    background-position: ;
+    background: linear-gradient(to top left, $swamp-color 50%, white 50%);
+}
