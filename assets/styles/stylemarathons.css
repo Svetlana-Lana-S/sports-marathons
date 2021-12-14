@@ -1,24 +1,4 @@
 
-body {
-  font-family: 'Montserrat', Times, sans-serif;
-}
-
-.wrapper {
-  min-height: 100vh;
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  max-width: 1180px;
-  margin: 0px auto;
-}
-
-.content {
-  flex: 1 1 auto;
-}
 .title__ourmarathons {
   text-align: center;
   margin-top: 30px;
@@ -28,6 +8,8 @@ body {
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  justify-content: center;
+
 }
 img {
   width: 100%;
@@ -38,7 +20,7 @@ img {
   position: relative;
   width: 28vw;
   color: rgb(36, 26, 26);
-  border: 1px solid #253131 ;
+  margin: 10px;
   }
   .button-running {
     position: absolute;
@@ -53,7 +35,6 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 12px;
   }
   .date-running {
     position: absolute;
@@ -63,13 +44,12 @@ img {
     padding-right: 10px;
     color: white;
     background-color: #253131;
-    border-radius: 12px;
   }
   .container__ourmarathons-cycling {
     position: relative;
     width: 28vw;
     color: rgb(36, 26, 26);
-    border: 1px solid #253131 ;
+    margin: 10px;
     }
   .button-cycling {
     position: absolute;
@@ -84,7 +64,6 @@ img {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border-radius: 12px;
   }
   .date-cycling {
     position: absolute;
@@ -94,13 +73,12 @@ img {
     padding-right: 10px;
     color: white;
     background-color: #253131;
-    border-radius: 12px;
   }
   .container__ourmarathons-swimming{
     position: relative;
     width: 28vw;
     color: rgb(36, 26, 26);
-    border: 1px solid #253131;
+    margin: 10px;
     }
     .button-swimming {
       position: absolute;
@@ -115,7 +93,6 @@ img {
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      border-radius: 12px;
     }
     .date-swimming {
       position: absolute;
@@ -125,7 +102,6 @@ img {
       padding-right: 10px;
       color: white;
       background-color: #253131;
-      border-radius: 12px;
     }
 
 
