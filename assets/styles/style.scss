@@ -45,6 +45,8 @@ body {
     padding: 10px;
 }
 
-.gallery {
-    background: $swamp-color;
+.gallery__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

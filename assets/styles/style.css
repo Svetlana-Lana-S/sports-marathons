@@ -53,7 +53,10 @@ body {
   padding: 10px;
 }
 
-.gallery {
-  background: #253131;
+.gallery__background {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
