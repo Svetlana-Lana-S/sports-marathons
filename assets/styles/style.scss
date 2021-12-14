@@ -22,11 +22,68 @@ body {
 .content {
     flex: 1 1 auto;
 }
-.footer {
-    background-color: $swamp-color;
-    color:$white-color;
-    text-decoration: none;
-}
-.footer__column-2 {
 
+.footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    background-color: $swamp-color;
+
+}
+
+.footer__logo {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.footer__menu {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__contacts {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__social-media {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__column {
+    color: $white-color;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: $white-color;
+    padding: 1px;
+}
+
+a:hover {
+
+    color: $yellow-color;
+}
+
+.footer__copyright {
+    color: $white-color;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 24px;
 }
