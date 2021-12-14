@@ -1,11 +1,14 @@
+$yellow-color: #FDC332;
+$swamp-color: #253131;
+$green-color: #309565;
+$white-color: #FFFFFF;
+
 body {
     font-family: 'Montserrat', Times, sans-serif;
 }
 
 .wrapper {
-    min-height: 100vh;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
 }
@@ -15,47 +18,8 @@ body {
     margin: 0px auto;
 }
 
-.header {
-    height: 100px;
-
-    .header__row {
-        display: flex;
-
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .header__logo img {
-        width: 70px;
-    }
-
-    .header__list {
-        display: flex;
-        flex-direction: row;
-
-        list-style-type: none;
-
-        li {
-            padding: 0 20px;
-        }
-    }
-
-    .header__link {
-        padding-right: 10px;
-        font-size: 18px;
-
-        text-decoration: none;
-        color: black;
-    }
-
-    .header__item {
-        margin-left: 10px;
-    }
-}
-
 .content {
     flex: 1 1 auto;
-    padding: 0 30px;
 }
 
 .shop {
@@ -125,45 +89,5 @@ body {
         text-decoration: none;
         font-weight: 500;
         font-size: 18px;
-    }
-}
-
-.footer {
-    height: 250px;
-
-    background-color: #253131;
-    color: white;
-
-    .footer__row {
-        display: flex;
-        flex-direction: row;
-
-        justify-content: space-around;
-        margin-top: 45px;
-
-        .footer__name {
-            font-size: 24px;
-        }
-
-        .footer__list {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .footer__mail {
-            margin-left: 100px;
-        }
-
-        .footer__list li {
-            padding-bottom: 5px;
-
-            list-style-type: none;
-            font-size: 16px;
-        }
-
-        .footer__link {
-            text-decoration: none;
-            color: white;
-        }
     }
 }

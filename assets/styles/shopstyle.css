@@ -1,3 +1,22 @@
+body {
+  font-family: 'Montserrat', Times, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
 .shop {
   margin: 0px 0px 50px 0px;
 }
