@@ -26,11 +26,7 @@ body {
 /* services */
 .services {
     display: grid;
-    grid-template-areas: "services__image services__text";
-    grid-template-columns: 5fr 4fr;
-    grid-template-rows: 1fr;
     background: $yellow-color;
-    /* column-gap: 20px; */
 }
 
 .services__image {
@@ -40,8 +36,6 @@ body {
     grid-area: services__image;
     background: linear-gradient(to top left, $yellow-color 50%, white 50%);
     position: relative;
-    align-items: flex-start;
-    justify-content: space-between;
 }
 
 %image_width {
@@ -50,16 +44,9 @@ body {
 }
 
 .image__item1,
+.image__item2,
 .image__item3 {
     @extend %image_width
-}
-
-.image__item2 {
-    object-fit: cover;
-}
-
-.image__item3 {
-    margin-top: 20px;
 }
 
 .services__text {
@@ -67,6 +54,16 @@ body {
     align-self: center;
     color: $swamp-color;
     margin-right: 50px;
+}
+
+a {
+    color: $swamp-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $swamp-color;
+    text-decoration: underline;
 }
 
 .services__text {
@@ -88,7 +85,7 @@ body {
 
 @media screen and (max-width: 767px) {
     .services {
-        grid-template-areas: "services__text";
+        grid-template-areas: "services__text_small";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -100,10 +97,14 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .services {
-        display: grid;
         grid-template-areas: "services__image services__text";
         grid-template-columns: 5fr 4fr;
         grid-template-rows: 1fr;
+    }
+
+    .services__image {
+        align-items: center;
+        justify-content: center;
     }
 
     .image__item1,
@@ -113,17 +114,30 @@ body {
 
     .image__item2 {
         width: 80%;
-        object-fit: cover;
     }
 }
 
 @media screen and (min-width: 1024px) {
 
+    .services {
+        grid-template-areas: "services__image services__text";
+        grid-template-columns: 5fr 4fr;
+        grid-template-rows: 1fr;
+    }
+
+    .services__image {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     .image__item2 {
         width: 40%;
-        object-fit: cover;
         position: absolute;
-        right: 40px;
-        top: 15vh;
+        right: 2vw;
+        top: 7vw;
+    }
+
+    .image__item3 {
+        margin-top: 20px;
     }
 }
