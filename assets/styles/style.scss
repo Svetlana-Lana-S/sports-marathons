@@ -49,12 +49,6 @@ body {
         justify-content: center;
     }
 
-    .marathons,
-    .gallery,
-    .services {
-        color: rgba(255, 255, 255, 0.6);
-    }
-
     .logo {
         width: 200px;
         height: 60px;
@@ -62,14 +56,14 @@ body {
 
     .options {
         display: grid;
-        grid-template-columns: 1fr 0.5fr 0.8fr;
+        grid-template-columns: 1fr;
         text-align: center;
         align-items: center;
-        gap: 40px;
-    }
 
-    .marathons {
-        margin: 10px;
+        a {
+            padding-right: 40px;
+            color: rgba(255, 255, 255, 0.6);
+        }
     }
 
     .personal_account {
@@ -109,10 +103,6 @@ body {
             grid-column: 1/5;
         }
 
-        .marathons {
-            margin: 0;
-        }
-
         .personal_account {
             display: grid;
             text-align: center;
@@ -141,11 +131,6 @@ body {
             text-align: center;
             align-items: center;
             padding-left: 5px;
-        }
-
-        .marathons {
-            margin: 10px;
-            color: #FFFFFF;
         }
 
         .personal_account {
