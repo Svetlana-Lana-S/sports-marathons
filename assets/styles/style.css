@@ -31,14 +31,37 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  padding: 50px;
 }
 
 .profile__items {
   margin-top: 50px;
+  text-align: center;
+}
+
+.photo {
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: max-content;
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 1fr;
+  text-align: center;
+  padding: 50px;
+}
+
+.chart__items_button {
+  display: flex;
+  justify-content: space-around;
 }
