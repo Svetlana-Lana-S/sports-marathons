@@ -3,6 +3,7 @@ body {
 }
 
 .wrapper {
+  min-height: 100vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
