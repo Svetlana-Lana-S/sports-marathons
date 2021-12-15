@@ -27,11 +27,17 @@ body {
 
 /*# sourceMappingURL=style.css.map */
 
+
+.back {
+  background-color: #FDC332;
+}
+
 .personal-page {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   padding: 50px;
+  text-align: center;
 }
 
 .profile__items {
@@ -64,4 +70,28 @@ body {
 .chart__items_button {
   display: flex;
   justify-content: space-around;
+}
+
+.icon {
+  max-width: 100px;
+}
+
+a {
+  color: #309565;
+}
+
+@media screen and (max-width: 768px) {
+
+  .personal-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .chart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr;
+  }
 }
