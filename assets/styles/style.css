@@ -76,7 +76,7 @@ body {
   max-width: 100px;
 }
 
-a {
+a:link {
   color: #309565;
 }
 
@@ -84,14 +84,18 @@ a {
 
   .personal-page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr;
 
   }
 
   .chart {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 90%;
     grid-template-rows: 150px 1fr;
+  }
+
+  #chart {
+    max-height: 100px;
   }
 }
