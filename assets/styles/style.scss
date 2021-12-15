@@ -73,3 +73,9 @@ body {
     font-family: 'Montserrat', Times, sans-serif;
     color: $yellow-color;
 }
+
+@media screen and (max-width:576px) {
+    .gallery__comments {
+        display: none;
+    }
+}

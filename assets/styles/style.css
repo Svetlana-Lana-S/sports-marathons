@@ -85,4 +85,10 @@ body {
   font-family: 'Montserrat', Times, sans-serif;
   color: #FDC332;
 }
+
+@media screen and (max-width: 576px) {
+  .gallery__comments {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
