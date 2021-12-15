@@ -42,11 +42,12 @@ body {
 .gallery__title {
     display: grid;
     justify-content: center;
-    padding: 10px;
+    padding: 2vw;
+    margin-bottom: 1vh;
+    font-family: 'Montserrat', Times, sans-serif;
+    color: $yellow-color;
 }
 
 .gallery__background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-size: cover;
 }
