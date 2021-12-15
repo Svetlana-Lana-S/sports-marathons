@@ -1,3 +1,7 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
 .company_banner {
     display: grid;
     grid-template-columns: auto 733px;
@@ -44,7 +48,21 @@
         }
     }
 
-    img {
-        width: 733px;
+    .img {
+        img {
+            width: 733px;
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        grid-template-columns: auto;
+
+        .info {
+            margin-top: 70px;
+        }
+
+        .img {
+            display: none;
+        }
     }
 }

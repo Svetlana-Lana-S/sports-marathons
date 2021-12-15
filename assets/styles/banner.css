@@ -47,7 +47,20 @@
   font-weight: bold;
 }
 
-.company_banner img {
+.company_banner .img img {
   width: 733px;
+}
+
+@media (max-width: 1399.98px) {
+  .company_banner {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .company_banner .info {
+    margin-top: 70px;
+  }
+  .company_banner .img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=banner.css.map */
