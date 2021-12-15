@@ -26,18 +26,10 @@ body {
 }
 
 /* стили блока */
-.steps {
-  border: 1px solid blue;
-  background-image: url(assets/img/Rectangle8.png);
-  background-size: cover;
-  background-color: #E5E5E5;
-}
-
 .steps__block {
-  border: 1px solid red;
   margin-left: 100px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,37 +43,55 @@ body {
 }
 
 .steps__block .steps__text {
-  max-width: 50%;
-  min-width: 50%;
+  width: 40%;
+}
+
+.steps__block .steps__text div {
+  border: 1px solid black;
+  min-height: 70px;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
+  max-width: 90%;
 }
 
 .steps__block h2 {
-  border: 1px solid yellow;
   color: #FFFFFF;
   font-size: 48px;
   font-weight: 600;
   line-height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .steps__block p {
-  border: 1px solid black;
   color: #253131;
   font-size: 22px;
   font-weight: 500;
   line-height: 33px;
-  margin-bottom: 50px;
 }
 
 .steps__block .steps__pic {
-  border: 1px solid yellow;
-  padding-left: 20px;
-  max-width: 70%;
-  min-width: 70%;
+  padding-left: 50px;
+  width: 60%;
 }
 
 .steps__block img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .steps__block {
+    margin: 0px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .steps__block .steps__text {
+    width: 80%;
+  }
+  .steps__block .steps__pic {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
