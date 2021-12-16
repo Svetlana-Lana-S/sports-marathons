@@ -53,7 +53,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: row;
-
+    width: 100%;
 }
 
 .previous_info {
@@ -101,7 +101,7 @@ p {
 @media screen and (max-width: 768px) {
 
     .future_photos {
-        display: non;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: 25%;
@@ -120,4 +120,3 @@ p {
         flex-direction: column;
         justify-content: center;
     }
-}
