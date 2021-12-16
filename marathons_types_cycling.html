@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="marathons_types_style.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/marathons_types_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -13,11 +14,24 @@
 <body>
     <!-- Тэг, который помогает все блоки сделать флекс (см css) -->
     <div class="wrapper">
-        <header>
+        <div class="body">
             <div class="content_container">
-                <h2>Хедер</h2>
+                <header class="shapka">
+                    <div class="logotype">
+                        <a href="index.html"><img class="logo" src="./assets/images/header_logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="options">
+                        <a class="marathons" id="marathons_eli2" href="/index.html#marathons_eli2">Наши марафоны</a>
+                        <a class="gallery" href="/gallery.html">Галерея</a>
+                        <a class="services" id="unit6" href="/index.html#unit6">Наши услуги</a>
+                    </div>
+                    <div class="personal_account">
+                        <a class="account" href="/personal-page.html">Личный кабинет</a>
+                    </div>
+                </header>
             </div>
-        </header>
+        </div>
+
         <main class="content">
     <!-- Селектор body – можно переименовать, как вам удобно. Это блок, который будет в себе содержать контентную часть -->
             <div class="body"> 
