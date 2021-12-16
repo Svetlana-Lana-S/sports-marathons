@@ -51,7 +51,7 @@
   width: 733px;
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1300px) {
   .company_banner {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -61,6 +61,19 @@
   }
   .company_banner .img {
     display: none;
+  }
+}
+
+@media (max-width: 985px) {
+  .company_banner .info {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .company_banner .info .title {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=banner.css.map */
