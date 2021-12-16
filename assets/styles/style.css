@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Montserrat', Times, sans-serif;
 }
@@ -22,6 +23,72 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+/*Галерея*/
+.gallery__images {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: repeat 2, 200px;
+      grid-template-rows: repeat 2, 200px;
+}
+
+.gallery__images > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw;
+  margin-bottom: 1vh;
+  font-family: 'Montserrat', Times, sans-serif;
+  color: #253131;
+}
+
+.gallery__comments__images {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: repeat 2, 200px;
+      grid-template-rows: repeat 2, 200px;
+}
+
+.gallery__comments__images > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gallery__comments__title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  font-family: 'Montserrat', Times, sans-serif;
+  color: #FDC332;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery__comments {
+    display: none;
+  }
 }
 
 /*form*/
