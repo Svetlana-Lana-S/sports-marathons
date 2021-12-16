@@ -19,6 +19,125 @@ $white-color: #FFFFFF;
     flex: 1 1 auto;
 }
 
+.shapka {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: rgba(37, 49, 49, 1);
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #FFFFFF;
+    }
+
+    .marathons:hover,
+    .gallery:hover,
+    .services:hover,
+    .account:hover {
+        text-decoration: underline;
+    }
+
+    .marathons {
+        padding-right: 10px;
+    }
+
+    .account {
+        color: rgba(253, 195, 50, 1);
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 100px;
+        margin-right: 30px;
+        width: 200px;
+        height: 60px;
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        align-items: center;
+
+        a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    .personal_account {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: right;
+        margin-right: 100px;
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 985px) {
+        font-size: 11px;
+        line-height: 12px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+
+        .logo {
+            margin: 0;
+            width: 125px;
+        }
+
+        .personal_account {
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 200px) and (max-width: 500px) {
+        padding: 0;
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: 1fr 0.25fr;
+        grid-template-rows: 1fr 0.25fr;
+
+        .logo {
+            width: 150px;
+            height: 50px;
+            margin: 0;
+            align-content: center;
+        }
+
+        .logotype {
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-content: end;
+            margin-right: 25px;
+        }
+
+        .marathons {
+            padding: 0;
+        }
+
+        .options {
+            display: grid;
+            grid-column: 1/2;
+            grid-row: 2/2;
+        }
+
+        .personal_account {
+            display: grid;
+            margin: 0;
+            grid-column: 2/2;
+            grid-row: 2/2;
+            text-align: center;
+        }
+    }
+}
+
 .title__ourmarathons {
     text-align: center;
     font-family: 'Montserrat', Times, sans-serif;
@@ -158,8 +277,6 @@ $white-color: #FFFFFF;
     color: $swamp-color;
 }
 
-
-
 .gallery__comments__images {
     display: grid;
     grid-gap: 20px;
@@ -189,9 +306,6 @@ $white-color: #FFFFFF;
         display: none;
     }
 }
-
-
-
 
 /*form*/
 .form {
@@ -367,7 +481,6 @@ a:hover {
 }
 
 .services__text {
-
     h2 {
         font-weight: bold;
         font-size: 48px;
@@ -381,7 +494,6 @@ a:hover {
         margin-top: 20px;
     }
 }
-
 
 @media screen and (max-width: 767px) {
     .services {
