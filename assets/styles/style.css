@@ -52,12 +52,16 @@ body {
   width: 40%;
 }
 
-.steps__block .steps__text div {
+.steps__block .steps__text .steps__list {
   border: 1px solid black;
   min-height: 70px;
   width: 100%;
   background-color: #FFFFFF;
   margin-bottom: 25px;
+}
+
+.steps__block .steps__text .steps__list:last-child {
+  margin-bottom: 0px;
 }
 
 .steps__block h2 {
@@ -84,10 +88,6 @@ body {
 .steps__block img {
   width: 100%;
   height: 100%;
-}
-
-.steps__block i {
-  height: 50px;
 }
 
 @media screen and (max-width: 767px) {

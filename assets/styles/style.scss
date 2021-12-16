@@ -45,14 +45,19 @@ body {
     .steps__text {
         width: 40%;
 
-        div {
+        .steps__list {
             border: 1px solid black;
             min-height: 70px;
             width: 100%;
 
             background-color: $white-color;
             margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
         }
+
     }
 
     h2 {
