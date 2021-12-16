@@ -57,11 +57,11 @@ body {
 }
 
 .steps__block p {
-  color: #253131;
+  color: #FFFFFF;
   font-size: 18px;
   font-weight: 500;
   line-height: 33px;
-  margin: 10px 10px 15px 65px;
+  margin: 0px 0px 0px 70px;
 }
 
 .steps__block .steps__pic {
@@ -77,13 +77,12 @@ body {
 .steps__text {
   width: 40%;
   counter-reset: cnt;
+  list-style-type: none;
 }
 
 .steps__list {
-  border: 1px solid black;
   min-height: 70px;
   width: 100%;
-  background-color: #FFFFFF;
   margin-bottom: 25px;
   counter-increment: cnt;
   position: relative;
@@ -95,9 +94,9 @@ body {
   font-size: 80px;
   font-weight: 500;
   left: 5px;
-  top: -0.3em;
+  top: -0.38em;
   opacity: 0.7;
-  color: #309565;
+  color: #FDC332;
 }
 
 .steps__list:last-child {
