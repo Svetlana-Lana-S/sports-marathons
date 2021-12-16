@@ -25,30 +25,33 @@ body {
 }
 
 .grid-container-result {
-    height: 35rem;
+    height: max-content;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    gap: 2rem;
     position: relative;
     background: #f9f9f9;
 }
 
 .grid-container-result .mobile-result {
     height: 30rem;
+    max-width: 100%;
 }
 
 .grid-container-result-mobile {
-
+    grid-template-columns: 1fr;
     margin-left: 2rem;
-    display: grid;
+    margin-right: 2rem;
     align-items: end;
 }
 
 .grid-container-result-text {
     margin-left: 2rem;
     display: grid;
-    align-items: end;
+    grid-template-columns: auto 1fr / 1fr;
+    align-items: center;
+
 }
 
 .grid-container-result h3 {
