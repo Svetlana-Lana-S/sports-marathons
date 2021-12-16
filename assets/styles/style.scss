@@ -22,6 +22,103 @@ body {
     flex: 1 1 auto;
 }
 
+
+
+/* стили блока */
+
+
+.steps {
+    background-image: url(../img/Rectangle8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.steps__block {
+    margin-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h2 {
+        color: $white-color;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 56px;
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: $white-color;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 33px;
+        margin: 0px 0px 0px 70px;
+    }
+
+    .steps__pic {
+        padding-left: 50px;
+        width: 60%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+.steps__text {
+    width: 40%;
+    counter-reset: cnt;
+    list-style-type: none;
+}
+
+.steps__list {
+    min-height: 70px;
+    width: 100%;
+    margin-bottom: 25px;
+
+    counter-increment: cnt;
+    position: relative;
+
+    &::before {
+        content: counter(cnt);
+        position: absolute;
+        font-size: 80px;
+        font-weight: 500;
+        left: 5px;
+        top: -0.38em;
+        opacity: 0.7;
+        color: $yellow-color;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .steps__block {
+        margin: 0px auto;
+        justify-content: center;
+    }
+
+
+    .steps__text {
+        width: 80%;
+    }
+
+    .steps__pic {
+        display: none;
+    }
+}
+
 .shapka {
     font-style: normal;
     font-weight: 500;
@@ -314,6 +411,7 @@ body {
 .form {
     padding-top: 20px;
     padding-bottom: 20px;
+
     a {
         text-decoration: none;
     }
@@ -327,7 +425,7 @@ body {
     padding: 15px 25px;
 }
 
-.form__content-active{
+.form__content-active {
     display: block;
 }
 
@@ -368,7 +466,7 @@ body {
     width: 100%;
     height: 50px;
     border: 1px solid #2531311a;
-    outline:none;
+    outline: none;
     font-family: 'Montserrat', Times, sans-serif;
     font-size: 16px;
 }
@@ -427,11 +525,12 @@ body {
     color: $swamp-color;
 }
 
-@media screen and (max-width: 479px){
-    .form__title{
+@media screen and (max-width: 479px) {
+    .form__title {
         font-size: 24px;
     }
-    .form__content input{
+
+    .form__content input {
         font-size: 14px;
     }
 
