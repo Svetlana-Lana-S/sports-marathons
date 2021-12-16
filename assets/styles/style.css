@@ -26,6 +26,12 @@ body {
 }
 
 /* стили блока */
+.steps {
+  background-image: url(../img/Rectangle8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .steps__block {
   margin-left: 100px;
   padding-top: 100px;
@@ -59,7 +65,7 @@ body {
   color: #FFFFFF;
   font-size: 48px;
   font-weight: 600;
-  line-height: 55px;
+  line-height: 56px;
   margin-bottom: 50px;
 }
 
