@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Montserrat', Times, sans-serif;
 }
@@ -22,5 +23,613 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.shapka {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background-color: #253131;
+  padding: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto 1fr;
+      grid-template-columns: 1fr auto 1fr;
+}
+
+.shapka a {
+  text-decoration: none;
+}
+
+.shapka a:active {
+  color: #FFFFFF;
+}
+
+.shapka .marathons:hover,
+.shapka .gallery:hover,
+.shapka .services:hover,
+.shapka .account:hover {
+  text-decoration: underline;
+}
+
+.shapka .marathons {
+  padding-right: 10px;
+}
+
+.shapka .account {
+  color: #fdc332;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shapka .logo {
+  margin-left: 100px;
+  margin-right: 30px;
+  width: 200px;
+  height: 60px;
+}
+
+.shapka .options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shapka .options a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.shapka .personal_account {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  margin-right: 100px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 985px) {
+  .shapka {
+    font-size: 11px;
+    line-height: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto 1fr;
+        grid-template-columns: 1fr auto 1fr;
+  }
+  .shapka .logo {
+    margin: 0;
+    width: 125px;
+  }
+  .shapka .personal_account {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .shapka {
+    padding: 0;
+    font-size: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.25fr;
+        grid-template-columns: 1fr 0.25fr;
+    -ms-grid-rows: 1fr 0.25fr;
+        grid-template-rows: 1fr 0.25fr;
+  }
+  .shapka .logo {
+    width: 150px;
+    height: 50px;
+    margin: 0;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .shapka .logotype {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin-right: 25px;
+  }
+  .shapka .marathons {
+    padding: 0;
+  }
+  .shapka .options {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+  }
+  .shapka .personal_account {
+    display: -ms-grid;
+    display: grid;
+    margin: 0;
+    -ms-grid-column: 2;
+    grid-column: 2/2;
+    -ms-grid-row: 2;
+    grid-row: 2/2;
+    text-align: center;
+  }
+}
+
+.title__ourmarathons {
+  text-align: center;
+  font-family: 'Montserrat', Times, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.container__ourmarathons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__ourmarathons-running--img,
+.container__ourmarathons-cycling--img,
+.container__ourmarathons-swimming--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.container__ourmarathons-running,
+.container__ourmarathons-cycling,
+.container__ourmarathons-swimming {
+  position: relative;
+  font-family: 'Montserrat', Times, sans-serif;
+  width: 30%;
+  color: #241a1a;
+  margin: 10px;
+}
+
+.button-running,
+.button-cycling,
+.button-swimming {
+  position: absolute;
+  font-size: 1.3vw;
+  bottom: 1%;
+  left: 22.5%;
+  background-color: #253131;
+  border: none;
+  color: white;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.date-running,
+.date-cycling,
+.date-swimming {
+  position: absolute;
+  font-size: 1.3vw;
+  top: 2%;
+  right: 2%;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  color: white;
+  background-color: #253131;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__ourmarathons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__ourmarathons-swimming,
+  .container__ourmarathons-cycling,
+  .container__ourmarathons-running {
+    width: 30%;
+  }
+  .date-running,
+  .date-cycling,
+  .date-swimming,
+  .button-running,
+  .button-cycling,
+  .button-swimming {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container__ourmarathons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 17%;
+  }
+  .container__ourmarathons-swimming,
+  .container__ourmarathons-cycling,
+  .container__ourmarathons-running {
+    width: 75%;
+  }
+  .date-running,
+  .date-cycling,
+  .date-swimming,
+  .button-running,
+  .button-cycling,
+  .button-swimming {
+    font-size: 2.5vw;
+  }
+}
+
+/*Галерея*/
+.gallery__images {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: repeat 2, 200px;
+      grid-template-rows: repeat 2, 200px;
+}
+
+.gallery__images > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery__title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw;
+  margin-bottom: 1vh;
+  font-family: 'Montserrat', Times, sans-serif;
+  color: #253131;
+}
+
+.gallery__comments__images {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-rows: repeat 2, 200px;
+      grid-template-rows: repeat 2, 200px;
+}
+
+.gallery__comments__images > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gallery__comments__title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 2vw;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  font-family: 'Montserrat', Times, sans-serif;
+  color: #FDC332;
+}
+
+@media screen and (max-width: 576px) {
+  .gallery__comments {
+    display: none;
+  }
+}
+
+/*form*/
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form__content {
+  display: none;
+  max-width: 450px;
+  margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 25px;
+}
+
+.form__content-active {
+  display: block;
+}
+
+.btns__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.btn__nav {
+  max-width: 49%;
+  min-width: 49%;
+  height: 40px;
+  background: #2531311a;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #253131 !important;
+}
+
+.btn__nav-active {
+  background-color: #FDC332;
+  color: #FFFFFF !important;
+}
+
+.form__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #253131;
+}
+
+.form__content input {
+  margin-bottom: 10px;
+  padding: 0 18px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #2531311a;
+  outline: none;
+  font-family: 'Montserrat', Times, sans-serif;
+  font-size: 16px;
+}
+
+.standart {
+  background-color: #fff;
+  color: #253131;
+}
+
+.btn__form {
+  background-color: #253131;
+  font-weight: 500;
+  color: #fff;
+}
+
+.forgot__password {
+  display: block;
+  text-align: center;
+  margin-top: 27px;
+  font-size: 14px;
+}
+
+.social__networks {
+  margin: 35px 0px 45px 0px;
+  text-align: center;
+}
+
+.social__networks-text {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #253131;
+}
+
+.social__networks-icons a {
+  margin-right: 43px;
+}
+
+.social__networks-icons a:last-child {
+  margin-right: 0px;
+}
+
+.social__networks-icons img {
+  width: 48px;
+  height: 48px;
+}
+
+.form__copyright {
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #253131b3;
+}
+
+.form__copyright a {
+  color: #253131;
+}
+
+@media screen and (max-width: 479px) {
+  .form__title {
+    font-size: 24px;
+  }
+  .form__content input {
+    font-size: 14px;
+  }
+  .social__networks-icons a {
+    margin-right: 30px;
+  }
+}
+
+/* services */
+.services {
+  display: -ms-grid;
+  display: grid;
+  background: #FDC332;
+}
+
+.services__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-area: services__image;
+  background: -webkit-gradient(linear, right bottom, left top, color-stop(50%, #FDC332), color-stop(50%, white));
+  background: linear-gradient(to top left, #FDC332 50%, white 50%);
+  position: relative;
+}
+
+.image__item1,
+.image__item2,
+.image__item3 {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services__text {
+  grid-area: services__text;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #253131;
+  margin-right: 50px;
+}
+
+a {
+  color: #253131;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #253131;
+  text-decoration: underline;
+}
+
+.services__text h2 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.services__text li {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+        grid-template-areas: "services__text_small";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .services__image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .services {
+        grid-template-areas: "services__image services__text";
+    -ms-grid-columns: 5fr 4fr;
+        grid-template-columns: 5fr 4fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .services__image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .image__item1,
+  .image__item3 {
+    display: none;
+  }
+  .image__item2 {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services {
+        grid-template-areas: "services__image services__text";
+    -ms-grid-columns: 5fr 4fr;
+        grid-template-columns: 5fr 4fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .services__image {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .image__item2 {
+    width: 40%;
+    position: absolute;
+    right: 2vw;
+    top: 7vw;
+  }
+  .image__item3 {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
