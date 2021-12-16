@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  font-family: 'Montserrat', Times, sans-serif;
-}
-
 .wrapper {
   overflow: hidden;
   display: -webkit-box;
@@ -23,6 +19,137 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.title__ourmarathons {
+  text-align: center;
+  font-family: 'Montserrat', Times, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.container__ourmarathons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__ourmarathons-running--img,
+.container__ourmarathons-cycling--img,
+.container__ourmarathons-swimming--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.container__ourmarathons-running,
+.container__ourmarathons-cycling,
+.container__ourmarathons-swimming {
+  position: relative;
+  font-family: 'Montserrat', Times, sans-serif;
+  width: 30%;
+  color: #241a1a;
+  margin: 10px;
+}
+
+.button-running,
+.button-cycling,
+.button-swimming {
+  position: absolute;
+  font-size: 1.3vw;
+  bottom: 1%;
+  left: 22.5%;
+  background-color: #253131;
+  border: none;
+  color: white;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.date-running,
+.date-cycling,
+.date-swimming {
+  position: absolute;
+  font-size: 1.3vw;
+  top: 2%;
+  right: 2%;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  color: white;
+  background-color: #253131;
+}
+
+@media screen and (max-width: 1024px) {
+  .container__ourmarathons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__ourmarathons-swimming,
+  .container__ourmarathons-cycling,
+  .container__ourmarathons-running {
+    width: 30%;
+  }
+  .date-running,
+  .date-cycling,
+  .date-swimming,
+  .button-running,
+  .button-cycling,
+  .button-swimming {
+    font-size: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container__ourmarathons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 17%;
+  }
+  .container__ourmarathons-swimming,
+  .container__ourmarathons-cycling,
+  .container__ourmarathons-running {
+    width: 75%;
+  }
+  .date-running,
+  .date-cycling,
+  .date-swimming,
+  .button-running,
+  .button-cycling,
+  .button-swimming {
+    font-size: 2.5vw;
+  }
 }
 
 /*Галерея*/
