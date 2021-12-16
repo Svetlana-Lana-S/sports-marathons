@@ -52,7 +52,6 @@ body {
 
             background-color: $white-color;
             margin-bottom: 25px;
-            max-width: 90%;
         }
     }
 
@@ -66,9 +65,10 @@ body {
 
     p {
         color: $swamp-color;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 33px;
+        margin: 10px 10px 15px 15px;
     }
 
     .steps__pic {
@@ -81,6 +81,7 @@ body {
         height: 100%;
     }
 
+
 }
 
 @media screen and (max-width: 767px) {
@@ -90,7 +91,7 @@ body {
 
 
         .steps__text {
-            width: 80%
+            width: 80%;
         }
 
         .steps__pic {

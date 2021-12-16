@@ -58,7 +58,6 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   margin-bottom: 25px;
-  max-width: 90%;
 }
 
 .steps__block h2 {
@@ -71,9 +70,10 @@ body {
 
 .steps__block p {
   color: #253131;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 33px;
+  margin: 10px 10px 15px 15px;
 }
 
 .steps__block .steps__pic {
@@ -84,6 +84,10 @@ body {
 .steps__block img {
   width: 100%;
   height: 100%;
+}
+
+.steps__block i {
+  height: 50px;
 }
 
 @media screen and (max-width: 767px) {
