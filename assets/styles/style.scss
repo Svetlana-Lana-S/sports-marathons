@@ -510,12 +510,12 @@ body {
     margin-right: 50px;
 }
 
-a {
+.services__text a {
     color: $swamp-color;
     text-decoration: none;
 }
 
-a:hover {
+.services__text a:hover {
     color: $swamp-color;
     text-decoration: underline;
 }
@@ -818,18 +818,19 @@ a:hover {
         justify-items: center;
     }
 
-    .footer__column{
+    .footer__column {
         margin-top: 0px;
     }
 
-    .footer__logo img{
+    .footer__logo img {
         width: 200px;
         height: 100px;
     }
-    .footer__contacts{
+
+    .footer__contacts {
         text-align: center;
     }
-    
+
 
     .footer__menu,
     .footer h3 {
