@@ -83,19 +83,17 @@ a:link {
 @media screen and (max-width: 768px) {
 
   .personal-page {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 1fr 1fr;
-
+    display: block
   }
 
   .chart {
     display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 150px 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    padding: 0px;
   }
 
   #chart {
-    max-height: 100px;
+    max-height: 400px;
   }
 }
