@@ -12,11 +12,15 @@ $white-color: #FFFFFF;
     }
 }
 
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 .content_container {
     max-width: 1440px;
     margin: 0px auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .previous {
@@ -42,12 +46,6 @@ h2 {
     display: flex;
     justify-content: center;
 }
-
-p {
-    display: flex;
-    justify-content: center;
-}
-
 
 
 .previous_photos {
@@ -98,6 +96,7 @@ p {
 }
 
 .future_photos {
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
 
