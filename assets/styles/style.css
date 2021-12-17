@@ -688,6 +688,7 @@ body {
 
 /*Footer*/
 .footer {
+  margin-top: 8%;
   display: grid;
   background-color: #253131;
   padding-left: 20px;
