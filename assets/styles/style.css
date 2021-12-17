@@ -26,10 +26,10 @@ body {
 }
 
 .grid-container-result {
+  margin-top: 8%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  width: 100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
