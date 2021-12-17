@@ -1,0 +1,23 @@
+$yellow-color: #FDC332;
+$swamp-color: #253131;
+$green-color: #309565;
+$white-color: #FFFFFF;
+
+body {
+    font-family: 'Montserrat', Times, sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_container {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.content {
+    flex: 1 1 auto;
+}
