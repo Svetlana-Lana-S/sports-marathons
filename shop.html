@@ -13,11 +13,23 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <div class="body">
             <div class="content_container">
-                <h2>Хедер</h2>
+                <header class="shapka">
+                    <div class="logotype">
+                        <a href="index.html"><img class="logo" src="./assets/images/header_logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="options">
+                        <a class="marathons" id="marathons_eli2" href="/index.html#marathons_eli2">Наши марафоны</a>
+                        <a class="gallery" href="/gallery.html">Галерея</a>
+                        <a class="services" href="/index.html#unit6">Наши услуги</a>
+                    </div>
+                    <div class="personal_account">
+                        <a class="account" href="/personal-page.html">Личный кабинет</a>
+                    </div>
+                </header>
             </div>
-        </header>
+        </div>
         <main class="content">
             <section class="shop"> 
                 <h2 class="products__title">Наш мерч и услуги</h2>
@@ -61,10 +73,38 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="content_container">
-                <div class="footer__row">
-                    <div class="footer__text">Тут должен быть футер</div>
+        <footer>
+            <div class="content_container footer">
+                <div class="footer__logo">
+                    <img src="./assets/images/footer_logo.svg" alt="logo">
+                </div>
+                <div class="footer__column">
+                    <h3>Информация</h3>
+                    <ul class="footer__menu">
+                        <li><a href="/index.html#marathons_eli2">Наши марафоны</a></li>
+                        <li><a href="/gallery.html">Галерея</a></li>
+                        <li><a href="/index.html#unit6">Наши услуги</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3>Контакты</h3>
+                    <div class="footer__contacts">
+                        <a>Вопросы и предложения</a>
+                        <p href="mailto:run@dobryaki.ru">run@dobryaki.ru</p>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h3>Социальные сети</h3>
+                    <ul class="footer__social-media">
+                        <li><a href="https://www.facebook.com/dobryakiru/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://vk.com/dobryakiru"><i class="fab fa-vk"></i> Вконтакте</a></li>
+                        <li><a href="https://www.instagram.com/masha_subanta/"><i class="fab fa-instagram"></i>Инстаграм</a></li>
+                        <li><a href="https://t.me/joinchat/U84yYjOqEoUwMTcy"><i class="fa-brands fa-telegram"></i> Чат в Телеграме</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright text-center py-3 footer__copyright">
+                    &copy; Клуб добряков
                 </div>
             </div>
         </footer>
