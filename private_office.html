@@ -27,12 +27,10 @@
                         <a href="index.html"><img class="logo" src="./assets/images/header_logo.svg" alt="logo" /></a>
                     </div>
                     <div class="options">
-                        <a class="marathons" href="/index.html#marathons_eli2">Наши марафоны</a>
-                        <a class="gallery" href="/gallery.html">Галерея</a>
-                        <a class="servicess" href="/index.html#unit6">Наши услуги</a>
+                        <a class="marathons" href="/index.html">Наши сайт</a>
                     </div>
                     <div class="personal_account">
-                        <a class="account" href="/personal-page.html">Личный кабинет</a>
+                        <a class="account" href="/private_office.html">Личный кабинет</a>
                     </div>
                 </header>
             </div>
@@ -41,64 +39,73 @@
         <main class="content">
             <!-- Селектор body – можно переименовать, как вам удобно. Это блок, который будет в себе содержать контентную часть -->
             <div class="body">
-                <div class="content_container" id="unit6">
-                    <div class="services">
-                        <div class="services__image">
-                            <img class="image__item1" src="./assets/images/tshirt2.png" alt="T-shirts">
-                            <img class="image__item2" src="./assets/images/medal.png" alt="Medals">
-                            <img class="image__item3" src="./assets/images/run.jpg" alt="Training">
-                        </div>
-                        <div class="services__text">
-                            <h2>Наши услуги:</h2>
+                <div class="content_container">
+                    <div class="private_office">
+                        <nav class="private_office__navigation">
                             <ul>
-                                <li><a href="shop.html" class="merch">Приобрести мерч</a></li>
-                                <li><a href="shop.html" class="">Получить диплом участника/медаль</a></li>
-                                <li><a href="shop.html">Получить тренировочный план/записаться к тренеру</a></li>
+                                <li><a class="active" href="#">Профиль</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Результаты</a></li>
+                                <li><a href="/shop.html">Наши услуги</a></li>
+                                <li><a href="#">Изменить профиль</a></li>
+                                <li><a href="/index.html">Выход</a></li>
                             </ul>
+                        </nav>
+                        <div class="private_office__text">
+                            <h2>Мой профиль</h2>
+                            <div class="container text__personal">
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <h4>Личные данные</h4>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-8 personal__name">
+                                        Имя и фамилия
+                                        <div class="bold"> Иванов Иван</div>
+                                    </div>
+                                    <div class="col personal__picture">
+                                        <img src="https://ui-avatars.com/api/?size=72&name=Иван+Иванов &font-size=0.33&background=253131&color=FDC332&rounded=true"
+                                            class="center-block">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col personal__sex">
+                                        Пол
+                                        <div class="bold"> Мужской</div>
+                                    </div>
+                                    <div class="col-8 personal_area__date">
+                                        Дата рождения
+                                        <div class="bold"> 27 января 2000г.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container text__contacts">
+                                <div class="row mt-5">
+                                    <div class="col">
+                                        <h4>Контакты</h4>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <div class="email">
+                                            Электронная почта
+                                            <div class="bold"> @mail.com</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="phone">
+                                            Мобильный телефон
+                                            <div class="bold"> 9001002030</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-
-        <footer>
-            <div class="content_container footer">
-                <div class="footer__logo">
-                    <img src="./assets/images/footer_logo.svg" alt="logo">
-                </div>
-                <div class="footer__column1">
-                    <h3>Информация</h3>
-                    <ul class="footer__menu">
-                        <li><a href="/index.html#marathons_eli2">Наши марафоны</a></li>
-                        <li><a href="/gallery.html">Галерея</a></li>
-                        <li><a href="/index.html#unit6">Наши услуги</a></li>
-                        <li><a href="#">Личный кабинет</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column2">
-                    <h3>Контакты</h3>
-                    <div class="footer__contacts">
-                        <a>Вопросы и предложения</a>
-                        <p><a href="mailto:run@dobryaki.ru">run@dobryaki.ru</a></p>
-                    </div>
-                </div>
-                <div class="footer__column3">
-                    <h3>Социальные сети</h3>
-                    <ul class="footer__social-media">
-                        <li><a href="https://www.facebook.com/dobryakiru/"><i class="fab fa-facebook"></i>
-                                Facebook</a></li>
-                        <li><a href="https://vk.com/dobryakiru"><i class="fab fa-vk"></i> Вконтакте</a></li>
-                        <li><a href="https://www.instagram.com/masha_subanta/"><i class="fab fa-instagram"></i>
-                                Инстаграм</a></li>
-                        <li><a href="https://t.me/joinchat/U84yYjOqEoUwMTcy"><i class="fa-brands fa-telegram"></i>
-                                Чат в Телеграме</a></li>
-                    </ul>
-                </div>
-                <div class="footer-copyright text-center py-3 footer__copyright">
-                    &copy; Клуб добряков
-                </div>
-            </div>
-        </footer>
     </div>
 </body>
 
