@@ -38,7 +38,7 @@
             margin-bottom: 5px;
         }
 
-        .form-row-radio > p {
+        .form-row-radio>p {
             margin-bottom: 5px;
             margin-top: 10px;
         }
@@ -85,7 +85,7 @@
                     <div class="private_office">
                         <nav class="private_office__navigation">
                             <ul>
-                                <li><a href="#">Профиль</a></li>
+                                <li><a href="/private_office.html">Профиль</a></li>
                                 <li><a href="/pravate_office_registration.html">Регистрация</a></li>
                                 <li><a href="/pravate_office_result.html">Результаты</a></li>
                                 <li><a href="/shop.html">Наши услуги</a></li>
@@ -95,79 +95,81 @@
                         </nav>
                         <div class="private_office__text">
                             <h2 class="private_office-titleedit">Редактирование учётной записи</h2>
-                            <form class="private_office__editingform" action="#" method="post" enctype="multipart/form-data">
                             <form class="private_office__editingform" action="#" method="post"
                                 enctype="multipart/form-data">
-                                <div class="private_office__row">
-                                    <h5 class="form__subtitle">Персональные данные</h5>
-                                    <div class="form-row">
-                                        <label for="name">Имя</label>
-                                        <input type="text" name="name" value="" id="name" />
+                                <form class="private_office__editingform" action="#" method="post"
+                                    enctype="multipart/form-data">
+                                    <div class="private_office__row">
+                                        <h5 class="form__subtitle">Персональные данные</h5>
+                                        <div class="form-row">
+                                            <label for="name">Имя</label>
+                                            <input type="text" name="name" value="" id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="surname">Фамилия</label>
+                                            <input type="text" name="surname" value="" id="surname" id="surname" />
+                                        </div>
+                                        <div class="form-row-radio">
+                                            <label for="sex">Пол</label>
+                                            <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
+                                            <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
+                                        </div>
+                                        <h5 class="form__subtitle">Контактная информация</h5>
+                                        <div class="form-row">
+                                            <label for="city">Город</label>
+                                            <input type="text" name="city" value="" id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="phone">Мобильный телефон</label>
+                                            <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value=""
+                                                id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="phone2">Телефон для экстренной связи</label>
+                                            <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
+                                        </div>
+                                        <h5 class="form__subtitle">Безопасность</h5>
+                                        <div class="form-row">
+                                            <label for="pass1">Старый пароль</label>
+                                            <input id="pass1" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="pass2">Новый пароль</label>
+                                            <input id="pass2" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="pass3">Повторите новый пароль</label>
+                                            <input id="pass2" type="password" name="pass" value="" />
+                                        </div>
+                                        <h5 class="form__subtitle">Почтовый адрес</h5>
+                                        <div class="form-row">
+                                            <label for="index">Почтовый индекс</label>
+                                            <input id="index" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="region">Область</label>
+                                            <input id="region" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="city">Город</label>
+                                            <input id="city" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="street">Улица</label>
+                                            <input id="street" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="bilding">Дом, квартира</label>
+                                            <input id="bilding" type="password" name="pass" value="" />
+                                        </div>
+                                        <button class="edit-btn" type="submit">Сохранить</button>
                                     </div>
-                                    <div class="form-row">
-                                        <label for="surname">Фамилия</label>
-                                        <input type="text" name="surname" value="" id="surname" id="surname" />
-                                    </div>
-                                    <div class="form-row-radio">
-                                        <label for="sex">Пол</label>
-                                        <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
-                                        <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
-                                    </div>
-                                    <h5 class="form__subtitle">Контактная информация</h5>
-                                    <div class="form-row">
-                                        <label for="city">Город</label>
-                                        <input type="text" name="city" value="" id="name" />
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="phone">Мобильный телефон</label>
-                                        <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value="" id="name" />
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="phone2">Телефон для экстренной связи</label>
-                                        <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
-                                    </div>
-                                    <h5 class="form__subtitle">Безопасность</h5>
-                                    <div class="form-row">
-                                        <label for="pass1">Старый пароль</label>
-                                        <input id="pass1" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="pass2">Новый пароль</label>
-                                        <input id="pass2" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="pass3">Повторите новый пароль</label>
-                                        <input id="pass2" type="password" name="pass" value=""/>
-                                    </div>
-                                    <h5 class="form__subtitle">Почтовый адрес</h5>
-                                    <div class="form-row">
-                                        <label for="index">Почтовый индекс</label>
-                                        <input id="index" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="region">Область</label>
-                                        <input id="region" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="city">Город</label>
-                                        <input id="city" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="street">Улица</label>
-                                        <input id="street" type="password" name="pass" value=""/>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="bilding">Дом, квартира</label>
-                                        <input id="bilding" type="password" name="pass" value=""/>
-                                    </div>
-                                    <button class="edit-btn" type="submit">Сохранить</button>
-                                    </div>
-                                </div>
                         </div>
                     </div>
-                    </form>
                 </div>
+                </form>
             </div>
+    </div>
     </div>
     </div>
     </main>
