@@ -85,6 +85,7 @@ body {
 
 .registration__row {
     display: flex;
+    flex-direction: row;
 
     padding-left: 1em;
 }
@@ -117,6 +118,23 @@ body {
     text-align: center;
 }
 
+/* private_office_result */
+
+.registration__btn-result {
+    width: 200px;
+    line-height: 56px;
+    background-color: #253131;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.form__result {
+    margin-bottom: 0;
+}
 
 @media screen and (max-width: 767px) {
     .private_office {
