@@ -70,7 +70,8 @@ body {
     .private_office__text {
         grid-area: prof__text;
 
-        h2 {
+        h2,
+        .private_office__editingform {
             padding-left: 0.75rem;
         }
 
@@ -78,6 +79,41 @@ body {
             font-weight: bold;
         }
     }
+}
+
+/* private_office_registration */
+
+.registration__row {
+    display: flex;
+
+    padding-left: 1em;
+}
+
+.private_office__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__img {
+    max-width: 70%;
+}
+
+.registration__img,
+.registration__title,
+.registration__text {
+    margin-bottom: 15px;
+}
+
+.registration__btn {
+    max-width: 200px;
+    line-height: 56px;
+    background-color: #253131;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
 }
 
 

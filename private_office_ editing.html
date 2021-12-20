@@ -15,6 +15,23 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>Document</title>
+    <style>
+            .private_office__row {
+    padding: 1em;
+    }
+    .private_office__row > label {
+    padding: 1em 1em 1em 0;
+    }
+    .private_office__row > input,
+    .private_office__row > button {
+    padding: 1em;
+    }
+    .fprivate_office__row > button {
+    background: gray;
+    color: white;
+    border: 0;
+    }
+    </style>
 </head>
 
 <body>
@@ -53,8 +70,48 @@
                         </nav>
                         <div class="private_office__text">
                             <h2>Редактирование учётной записи</h2>
-                            <form action="#" method="post" enctype="multipart/form-data">
-                                <input type="text" name="name" value=""/>
+                            <form class="private_office__editingform" action="#" method="post" enctype="multipart/form-data">
+                                <div class="private_office__row">
+                                    <h5>Персональные данные</h5>
+                                    <div>
+                                        <label for="name">Имя</label>
+                                        <input type="text" name="name" value="" id="name" />
+                                    </div>
+                                    <div>
+                                        <label for="surname">Фамилия</label>
+                                        <input type="text" name="surname" value="" id="surname" id="surname" />
+                                    </div>
+                                    <div>
+                                        <label for="sex">Пол</label>
+                                        <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
+                                        <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
+                                    <div>
+                                    <h5>Контактная информация</h5>
+                                    <div>
+                                        <label for="city">Город</label>
+                                        <input type="text" name="city" value="" id="name" />
+                                    </div>
+                                    <div>
+                                        <label for="phone">Мобильный телефон</label>
+                                        <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value="" id="name" />
+                                    </div>
+                                    <div>
+                                        <label for="phone2">Телефон для экстренной связи</label>
+                                        <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
+                                    </div>
+                                    <h5>Безопасность</h5>
+                                    <div>
+                                        <input type="password" name="pass" value=""/>
+                                    </div>
+                                    <div>
+                                        <input type="password" name="pass" value=""/>
+                                    </div>
+                                    <div>
+                                        <input type="password" name="pass" value=""/>
+                                    </div>
+                                    <h5>Почтовый адрес</h5>
+                                    <button type="submit">Сохранить</button>
+                                </div>
                             </form>
                         </div>
                     </div>
