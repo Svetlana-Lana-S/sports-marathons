@@ -15,48 +15,6 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
     <title>Document</title>
-    <style>
-        .form-row {
-            display: flex;
-            justify-content: space-between;
-
-            margin-bottom: 5px;
-
-            max-width: 510px;
-        }
-
-        .private_office-titleedit {
-            margin-bottom: 15px;
-        }
-
-        .form__subtitle {
-            margin-bottom: 15px;
-            margin-top: 20px;
-        }
-
-        .form-row-radio {
-            margin-bottom: 5px;
-        }
-
-        .form-row-radio>p {
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .private_office__row {
-            padding: 20px;
-
-            max-width: 600px;
-            border: 1px solid rgb(219, 219, 219);
-            border-radius: 5px;
-        }
-
-        .edit-btn {
-            background-color: #253131;
-            border: none;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -95,74 +53,80 @@
                         </nav>
                         <div class="private_office__text">
                             <h2 class="private_office-titleedit">Редактирование учётной записи</h2>
-                            <form class="private_office__editingform" action="#" method="post"
-                                enctype="multipart/form-data">
                                 <form class="private_office__editingform" action="#" method="post"
                                     enctype="multipart/form-data">
                                     <div class="private_office__row">
-                                        <h5 class="form__subtitle">Персональные данные</h5>
-                                        <div class="form-row">
-                                            <label for="name">Имя</label>
-                                            <input type="text" name="name" value="" id="name" />
+                                        <div class="form__container">
+                                            <h5 class="form__subtitle">Персональные данные</h5>
+                                            <div class="form-row">
+                                                <label for="name">Имя</label>
+                                                <input type="text" name="name" value="" id="name" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="surname">Фамилия</label>
+                                                <input type="text" name="surname" value="" id="surname" id="surname" />
+                                            </div>
+                                            <div class="form-row-radio">
+                                                <label for="sex">Пол</label>
+                                                <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
+                                                <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
+                                            </div>
                                         </div>
-                                        <div class="form-row">
-                                            <label for="surname">Фамилия</label>
-                                            <input type="text" name="surname" value="" id="surname" id="surname" />
+                                        <div class="form__container">
+                                            <h5 class="form__subtitle">Контактная информация</h5>
+                                            <div class="form-row">
+                                                <label for="city">Город</label>
+                                                <input type="text" name="city" value="" id="name" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="phone">Мобильный телефон</label>
+                                                <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value=""
+                                                    id="name" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="phone2">Телефон для экстренной связи</label>
+                                                <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
+                                            </div>
                                         </div>
-                                        <div class="form-row-radio">
-                                            <label for="sex">Пол</label>
-                                            <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
-                                            <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
-                                        </div>
-                                        <h5 class="form__subtitle">Контактная информация</h5>
-                                        <div class="form-row">
-                                            <label for="city">Город</label>
-                                            <input type="text" name="city" value="" id="name" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="phone">Мобильный телефон</label>
-                                            <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value=""
-                                                id="name" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="phone2">Телефон для экстренной связи</label>
-                                            <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
-                                        </div>
-                                        <h5 class="form__subtitle">Безопасность</h5>
-                                        <div class="form-row">
-                                            <label for="pass1">Старый пароль</label>
-                                            <input id="pass1" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="pass2">Новый пароль</label>
-                                            <input id="pass2" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="pass3">Повторите новый пароль</label>
-                                            <input id="pass2" type="password" name="pass" value="" />
-                                        </div>
-                                        <h5 class="form__subtitle">Почтовый адрес</h5>
-                                        <div class="form-row">
-                                            <label for="index">Почтовый индекс</label>
-                                            <input id="index" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="region">Область</label>
-                                            <input id="region" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="city">Город</label>
-                                            <input id="city" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="street">Улица</label>
-                                            <input id="street" type="password" name="pass" value="" />
-                                        </div>
-                                        <div class="form-row">
-                                            <label for="bilding">Дом, квартира</label>
-                                            <input id="bilding" type="password" name="pass" value="" />
-                                        </div>
-                                        <button class="edit-btn" type="submit">Сохранить</button>
+                                        <div class="form__container">
+                                            <h5 class="form__subtitle">Безопасность</h5>
+                                            <div class="form-row">
+                                                <label for="pass1">Старый пароль</label>
+                                                <input id="pass1" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="pass2">Новый пароль</label>
+                                                <input id="pass2" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="pass3">Повторите новый пароль</label>
+                                                <input id="pass2" type="password" name="pass" value="" />
+                                            </div>
+                                        </div>  
+                                        <div class="form__container">
+                                            <h5 class="form__subtitle">Почтовый адрес</h5>
+                                            <div class="form-row">
+                                                <label for="index">Почтовый индекс</label>
+                                                <input id="index" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="region">Область</label>
+                                                <input id="region" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="city">Город</label>
+                                                <input id="city" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="street">Улица</label>
+                                                <input id="street" type="password" name="pass" value="" />
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="bilding">Дом, квартира</label>
+                                                <input id="bilding" type="password" name="pass" value="" />
+                                            </div>
+                                            <button class="edit-btn" type="submit">Сохранить</button>
+                                        </div> 
                                     </div>
                         </div>
                     </div>

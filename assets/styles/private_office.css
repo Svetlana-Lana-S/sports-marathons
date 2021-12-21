@@ -4,13 +4,8 @@ body {
 
 .wrapper {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .content_container {
@@ -19,33 +14,25 @@ body {
 }
 
 .content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 /* private_office profile*/
 .shapka {
-  -ms-grid-columns: 1fr 3fr 1fr;
-      grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .private_office {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "prof__nav prof__text";
-  -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-areas: "prof__nav prof__text";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
   margin-top: 30px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .private_office .private_office__navigation {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: prof__nav;
 }
 
@@ -77,8 +64,6 @@ body {
 }
 
 .private_office .private_office__text {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: prof__text;
 }
 
@@ -93,24 +78,14 @@ body {
 
 /* private_office_registration */
 .registration__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding-left: 1em;
 }
 
 .private_office__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .registration__img {
@@ -151,6 +126,50 @@ body {
   margin-bottom: 0;
 }
 
+/* private_office_editing */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  max-width: 510px;
+}
+
+.private_office-titleedit {
+  margin-bottom: 15px;
+}
+
+.form__subtitle {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.form-row-radio {
+  margin-bottom: 5px;
+}
+
+.form-row-radio > p {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.private_office__row {
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.form__container {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+}
+
+.edit-btn {
+  background-color: #253131;
+  border: none;
+  color: white;
+}
+
 @media screen and (max-width: 767px) {
   .private_office {
     margin-left: 5%;
@@ -164,4 +183,3 @@ body {
     margin-right: 10%;
   }
 }
-/*# sourceMappingURL=private_office.css.map */
