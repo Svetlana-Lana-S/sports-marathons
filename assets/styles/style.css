@@ -238,6 +238,10 @@ body {
 .title__ourmarathons {
   text-align: center;
   font-family: "Montserrat", Times, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #253131;
+  font-size: 48px;
   margin-top: 8%;
   margin-bottom: 50px;
 }
@@ -264,7 +268,7 @@ body {
   position: relative;
   font-family: "Montserrat", Times, sans-serif;
   width: 30%;
-  color: #241a1a;
+  color: #253131;
   margin: 10px;
 }
 
@@ -301,7 +305,7 @@ body {
   background-color: #253131;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 599px) {
   .container__ourmarathons {
     display: flex;
     flex-direction: row;
@@ -312,7 +316,7 @@ body {
   .container__ourmarathons-swimming,
 .container__ourmarathons-cycling,
 .container__ourmarathons-running {
-    width: 30%;
+    width: 40%;
   }
 
   .date-running,
@@ -321,7 +325,7 @@ body {
 .button-running,
 .button-cycling,
 .button-swimming {
-    font-size: 1.3vw;
+    font-size: 1vw;
   }
 }
 @media screen and (max-width: 599px) {

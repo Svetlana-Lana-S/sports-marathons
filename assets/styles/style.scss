@@ -164,11 +164,6 @@ body {
             justify-content: end;
             margin-right: 25px;
         }
-
-        .marathons {
-            padding: 0;
-        }
-
         .options {
             display: grid;
             grid-column: 1/2;
@@ -269,9 +264,8 @@ body {
 }
 
 /*Наши марафоны*/
-.title__ourmarathons {
+.title__ourmarathons{
     text-align: center;
-    font-family: 'Montserrat', Times, sans-serif;
     margin-top: 8%;
     margin-bottom: 50px;
 }
