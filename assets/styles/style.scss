@@ -119,7 +119,7 @@ body {
 
     .marathons:hover,
     .gallery:hover,
-    .services:hover,
+    .servicess:hover,
     .account:hover {
         text-decoration: underline;
     }
@@ -542,12 +542,12 @@ body {
     margin-right: 50px;
 }
 
-a {
+.services__text a {
     color: $swamp-color;
     text-decoration: none;
 }
 
-a:hover {
+.services__text a:hover {
     color: $swamp-color;
     text-decoration: underline;
 }
@@ -569,12 +569,33 @@ a:hover {
 
 @media screen and (max-width: 767px) {
     .services {
-        grid-template-areas: "services__text_small";
+        grid-template-areas: "services__text"
+            "services__image";
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .services__image {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: $yellow-color;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 3vw;
+    }
+
+    .image__item1 {
+        width: 80%;
+    }
+
+    .image__item2 {
+        margin-top: 3vw;
+        width: 40%;
+    }
+
+    .image__item3 {
         display: none;
     }
 }
@@ -584,6 +605,8 @@ a:hover {
         grid-template-areas: "services__image services__text";
         grid-template-columns: 5fr 4fr;
         grid-template-rows: 1fr;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .services__image {
@@ -771,17 +794,18 @@ a:hover {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    color: $white-color;
 }
 
 .footer__social-media {
-    margin-top: 20px;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
 }
 
-.footer__column {
-    color: $white-color;
+.footer__column1,
+.footer__column2,
+.footer__column3 {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
@@ -791,29 +815,30 @@ a:hover {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    color: $white-color;
 }
 
-ul {
+.footer ul {
     padding-inline-start: 0px;
 }
 
-li {
+.footer li {
     text-decoration: none;
     color: $white-color;
     padding-left: 0px;
     list-style-type: none;
 }
 
-li:hover {
+.footer li:hover {
     color: $yellow-color;
 }
 
-a {
+.footer a {
     text-decoration: none;
     color: $white-color;
 }
 
-a:hover {
+.footer a:hover {
     color: $yellow-color;
 }
 
@@ -827,25 +852,20 @@ a:hover {
 @media screen and (max-width: 767px) {
 
     .footer {
-        grid-template-columns: 1fr;
-        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr;
     }
 
-    .footer__column{
-        margin-top: 0px;
+    .footer__copyright {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
-    .footer__logo img{
-        width: 200px;
-        height: 100px;
+    .footer__logo {
+        display: none;
     }
-    .footer__contacts{
-        text-align: center;
-    }
-    
 
-    .footer__menu,
-    .footer h3 {
+    .footer__column1 {
         display: none;
     }
 }
@@ -853,13 +873,17 @@ a:hover {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3fr;
     }
 
     .footer__copyright {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 4;
+    }
+
+    .footer__logo {
+        display: none;
     }
 }
 
