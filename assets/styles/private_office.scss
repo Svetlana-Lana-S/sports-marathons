@@ -35,8 +35,9 @@ body {
     margin-top: 30px;
     margin-left: 15%;
 
-    .private_office__navigation {
+    .private_office__nav {
         grid-area: prof__nav;
+        justify-self: start;
 
         ul {
             list-style-type: none;
@@ -204,7 +205,99 @@ body {
     .private_office {
         margin-left: 5%;
         margin-right: 5%;
+        grid-template-areas: "prof__text";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
+
+    .private_office__nav {
+        position: fixed;
+        left: -200px;
+        /* плавный переход смещения панели */
+        -webkit-transition: left 0.3s;
+        -moz-transition: left 0.3s;
+        transition: left 0.3s;
+        /* поверх других элементов */
+        z-index: 2000;
+    }
+
+    .nav-toggle {
+        position: absolute;
+        left: 200px;
+        padding: 0.5em;
+        background: $swamp-color;
+        color: $white-color;
+        /* вид курсора */
+        cursor: pointer;
+        /* размер шрифта */
+        font-size: 20px;
+        line-height: 1;
+        /* всегда поверх других элементов страницы */
+        z-index: 2001;
+        /* анимируем цвет текста при наведении */
+        -webkit-transition: color .25s ease-in-out;
+        -moz-transition: color .25s ease-in-out;
+        transition: color .25s ease-in-out;
+    }
+
+    .nav-toggle:after {
+        content: '\2630';
+        text-decoration: none;
+    }
+
+    .nav-toggle:hover {
+        color: $yellow-color;
+    }
+
+    [id='nav-toggle'] {
+        position: absolute;
+        display: none;
+    }
+
+    [id='nav-toggle']:checked~.private_office__nav>.nav-toggle {
+        left: auto;
+        right: 0;
+    }
+
+    [id='nav-toggle']:checked~.private_office__nav {
+        left: 0;
+        box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+        overflow-y: auto;
+    }
+
+    [id='nav-toggle']:checked~.private_office__nav>.nav-toggle:after {
+        content: '\2715';
+    }
+
+    .private_office__nav>ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .private_office__nav>ul>li {
+        opacity: 0;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+        -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+        -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+        transition: opacity .5s .1s, transform .5s .1s;
+    }
+
+    [id='nav-toggle']:checked~.private_office__nav>ul>li {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

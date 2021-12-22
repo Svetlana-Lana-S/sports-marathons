@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", Times, sans-serif;
 }
@@ -30,29 +31,30 @@ body {
   margin-top: 30px;
   margin-left: 15%;
 }
-.private_office .private_office__navigation {
+.private_office .private_office__nav {
   grid-area: prof__nav;
+  justify-self: start;
 }
-.private_office .private_office__navigation ul {
+.private_office .private_office__nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 200px;
   background-color: #253131;
 }
-.private_office .private_office__navigation ul li a {
+.private_office .private_office__nav ul li a {
   display: block;
   color: #FFFFFF;
   padding: 8px 0 8px 16px;
   text-decoration: none;
 }
-.private_office .private_office__navigation ul li a.active {
+.private_office .private_office__nav ul li a.active {
   background-color: #FDC332;
 }
-.private_office .private_office__navigation ul li a:hover {
+.private_office .private_office__nav ul li a:hover {
   background-color: #FDC332;
 }
-.private_office .private_office__navigation ul li a:hover:not(.active) {
+.private_office .private_office__nav ul li a:hover:not(.active) {
   opacity: 0.7;
 }
 .private_office .private_office__text {
@@ -178,6 +180,84 @@ body {
   .private_office {
     margin-left: 5%;
     margin-right: 5%;
+    grid-template-areas: "prof__text";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .private_office__nav {
+    position: fixed;
+    left: -200px;
+    /* плавный переход смещения панели */
+    transition: left 0.3s;
+    /* поверх других элементов */
+    z-index: 2000;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    left: 200px;
+    padding: 0.5em;
+    background: #253131;
+    color: #FFFFFF;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 20px;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    transition: color 0.25s ease-in-out;
+  }
+
+  .nav-toggle:after {
+    content: "☰";
+    text-decoration: none;
+  }
+
+  .nav-toggle:hover {
+    color: #FDC332;
+  }
+
+  [id=nav-toggle] {
+    position: absolute;
+    display: none;
+  }
+
+  [id=nav-toggle]:checked ~ .private_office__nav > .nav-toggle {
+    left: auto;
+    right: 0;
+  }
+
+  [id=nav-toggle]:checked ~ .private_office__nav {
+    left: 0;
+    box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+
+  [id=nav-toggle]:checked ~ .private_office__nav > .nav-toggle:after {
+    content: "✕";
+  }
+
+  .private_office__nav > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .private_office__nav > ul > li {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
+  }
+
+  [id=nav-toggle]:checked ~ .private_office__nav > ul > li {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
