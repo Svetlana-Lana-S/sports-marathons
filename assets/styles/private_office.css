@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', Times, sans-serif;
+  font-family: "Montserrat", Times, sans-serif;
 }
 
 .wrapper {
@@ -28,14 +28,11 @@ body {
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
   margin-top: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 15%;
 }
-
 .private_office .private_office__navigation {
   grid-area: prof__nav;
 }
-
 .private_office .private_office__navigation ul {
   list-style-type: none;
   margin: 0;
@@ -43,37 +40,44 @@ body {
   width: 200px;
   background-color: #253131;
 }
-
 .private_office .private_office__navigation ul li a {
   display: block;
   color: #FFFFFF;
   padding: 8px 0 8px 16px;
   text-decoration: none;
 }
-
 .private_office .private_office__navigation ul li a.active {
   background-color: #FDC332;
 }
-
 .private_office .private_office__navigation ul li a:hover {
   background-color: #FDC332;
 }
-
 .private_office .private_office__navigation ul li a:hover:not(.active) {
   opacity: 0.7;
 }
-
 .private_office .private_office__text {
   grid-area: prof__text;
-}
-
-.private_office .private_office__text h2,
-.private_office .private_office__text .private_office__editingform {
   padding-left: 0.75rem;
 }
-
+.private_office .private_office__text h2 {
+  margin-bottom: 15px;
+}
+.private_office .private_office__text .private_office__border {
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
 .private_office .private_office__text .bold {
   font-weight: bold;
+}
+.private_office .private_office__text .text__personal {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+}
+.private_office .private_office__text .container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* private_office_registration */
@@ -176,10 +180,9 @@ body {
     margin-right: 5%;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .private_office {
     margin-left: 10%;
     margin-right: 10%;
   }
-}
+}/*# sourceMappingURL=private_office.css.map */

@@ -33,8 +33,7 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 15%;
 
     .private_office__navigation {
         grid-area: prof__nav;
@@ -69,14 +68,31 @@ body {
 
     .private_office__text {
         grid-area: prof__text;
+        padding-left: 0.75rem;
 
-        h2,
-        .private_office__editingform {
-            padding-left: 0.75rem;
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .private_office__border {
+            padding: 20px;
+            max-width: 600px;
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 5px;
         }
 
         .bold {
             font-weight: bold;
+        }
+
+        .text__personal {
+            border-bottom: 1px solid rgb(219, 219, 219);
+            padding-bottom: 20px;
+        }
+
+        .container {
+            padding-left: 0px;
+            padding-right: 0px;
         }
     }
 }
