@@ -931,6 +931,14 @@ body {
     }
 }
 
+@media screen and (min-width:1024px) and (max-width:1366px) {
+    .gallery__background {
+        display: none;
+    }
+}
+
+
+
 /*form*/
 .form {
     padding-top: 20px;
