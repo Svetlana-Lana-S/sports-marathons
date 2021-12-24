@@ -1,12 +1,17 @@
 @charset "UTF-8";
 body {
-  font-family: "Montserrat", Times, sans-serif;
+  font-family: 'Montserrat', Times, sans-serif;
 }
 
 .wrapper {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content_container {
@@ -15,22 +20,31 @@ body {
 }
 
 .content {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 /* private_office profile*/
 .private_office {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "prof__nav prof__text";
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr;
+      grid-template-areas: "prof__nav prof__text";
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   margin-top: 30px;
   margin-left: 15%;
 }
+
 .private_office .private_office__nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: prof__nav;
   margin-top: 0;
 }
+
 .private_office .private_office__nav ul {
   list-style-type: none;
   margin: 0;
@@ -40,41 +54,53 @@ body {
   width: 200px;
   background-color: #253131;
 }
+
 .private_office .private_office__nav ul li a {
   display: block;
   color: #FFFFFF;
   padding: 8px 0 8px 16px;
   text-decoration: none;
 }
+
 .private_office .private_office__nav ul li a.active {
   background-color: #FDC332;
 }
+
 .private_office .private_office__nav ul li a:hover {
   background-color: #FDC332;
 }
+
 .private_office .private_office__nav ul li a:hover:not(.active) {
   opacity: 0.7;
 }
+
 .private_office .private_office__text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: prof__text;
   padding-left: 0.75rem;
 }
+
 .private_office .private_office__text h2 {
   margin-bottom: 15px;
 }
+
 .private_office .private_office__text .private_office__border {
   padding: 20px;
   max-width: 600px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
 }
+
 .private_office .private_office__text .bold {
   font-weight: bold;
 }
+
 .private_office .private_office__text .text__personal {
   border-bottom: 1px solid #dbdbdb;
   padding-bottom: 20px;
 }
+
 .private_office .private_office__text .container {
   padding-left: 0px;
   padding-right: 0px;
@@ -82,14 +108,24 @@ body {
 
 /* private_office_registration */
 .registration__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding-left: 1em;
 }
 
 .private_office__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .registration__img {
@@ -132,8 +168,12 @@ body {
 
 /* private_office_editing */
 .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 5px;
   max-width: 510px;
 }
@@ -178,20 +218,21 @@ body {
   .private_office {
     margin-left: 10%;
     margin-right: 10%;
-    grid-template-areas: "prof__text";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+        grid-template-areas: "prof__text";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
   }
-
   .private_office__nav {
     position: fixed;
     left: -200px;
     /* плавный переход смещения панели */
+    -webkit-transition: left 0.3s;
     transition: left 0.3s;
     /* поверх других элементов */
     z-index: 2000;
   }
-
   .nav-toggle {
     position: absolute;
     left: 200px;
@@ -206,61 +247,60 @@ body {
     /* всегда поверх других элементов страницы */
     z-index: 2001;
     /* анимируем цвет текста при наведении */
-    transition: color 0.25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
   }
-
   .nav-toggle:after {
-    content: "☰";
+    content: '\2630';
     text-decoration: none;
   }
-
   .nav-toggle:hover {
     color: #FDC332;
   }
-
-  [id=nav-toggle] {
+  [id='nav-toggle'] {
     position: absolute;
     display: none;
   }
-
-  [id=nav-toggle]:checked ~ .private_office__nav > .nav-toggle {
+  [id='nav-toggle']:checked ~ .private_office__nav > .nav-toggle {
     left: auto;
     right: 0;
   }
-
-  [id=nav-toggle]:checked ~ .private_office__nav {
+  [id='nav-toggle']:checked ~ .private_office__nav {
     left: 0;
     box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
   }
-
-  [id=nav-toggle]:checked ~ .private_office__nav > .nav-toggle:after {
-    content: "✕";
+  [id='nav-toggle']:checked ~ .private_office__nav > .nav-toggle:after {
+    content: '\2715';
   }
-
   .private_office__nav > ul {
     display: block;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-
   .private_office__nav > ul > li {
     opacity: 0;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    transition: opacity 0.5s 0.1s, transform 0.5s 0.1s;
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s, -webkit-transform .5s .1s;
   }
-
-  [id=nav-toggle]:checked ~ .private_office__nav > ul > li {
+  [id='nav-toggle']:checked ~ .private_office__nav > ul > li {
     opacity: 1;
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .private_office {
     margin-left: 10%;
     margin-right: 10%;
   }
-}/*# sourceMappingURL=private_office.css.map */
+}
+/*# sourceMappingURL=private_office.css.map */
