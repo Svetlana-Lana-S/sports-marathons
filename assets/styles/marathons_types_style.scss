@@ -38,7 +38,9 @@ $white-color: #FFFFFF;
     p {
         display: flex;
         justify-content: center;
-        margin: 2%;
+        margin-top: 2%;
+
+        margin-bottom: 4%;
     }
 }
 
@@ -53,6 +55,7 @@ h2 {
     justify-content: center;
     flex-direction: row;
 
+
 }
 
 .previous_info {
@@ -64,7 +67,7 @@ h2 {
     margin-left: 25%;
 }
 
-.future{
+.future {
     margin-top: 25px;
 }
 
@@ -92,13 +95,17 @@ h2 {
         display: flex;
         justify-content: center;
         margin: 2%;
+        margin-bottom: 2%;
     }
 }
 
 .future_photos {
-    margin-bottom: 5%;
+
     display: flex;
     justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
 
 }
 
