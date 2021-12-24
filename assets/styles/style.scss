@@ -24,32 +24,29 @@ body {
 
 .grid-container-result {
     margin-top: 8%;
-    height: max-content;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    gap: 2rem;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     background: #f9f9f9;
 }
 
 .grid-container-result .mobile-result {
-    height: 30rem;
-    max-width: 100%;
+   max-width: 100%;
+   max-height: 100%;
 }
 
 .grid-container-result-mobile {
-    grid-template-columns: 1fr;
     margin-left: 2rem;
     margin-right: 2rem;
-    align-items: end;
+    margin-top: 2em;
+    align-self: center;
 }
 
 .grid-container-result-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 2rem;
-    display: grid;
-    grid-template-columns: auto 1fr / 1fr;
-    align-items: center;
-
+    margin-right: 30px;
+    align-self: center;
 }
 
 .grid-container-result h3 {
@@ -64,6 +61,41 @@ body {
 .grid-container-result-text p {
     color: rgba(37, 49, 49, 0.7);
 }
+
+
+@media screen and (max-width: 778px){
+    .grid-container-result{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid-container-result .mobile-result {
+        align-self: center;
+        max-width: 300px;
+        max-height: 350px;
+    }
+
+    .grid-container-result h3{
+    text-align: center;
+    }
+
+    .grid-container-result-text p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .grid-container-result-text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .grid-container-result h3{
+        font-size: 35px;
+        line-height: 42px;
+        }
+}
+
+
 
 /*header*/
 .shapka {
@@ -164,11 +196,6 @@ body {
             justify-content: end;
             margin-right: 25px;
         }
-
-        .marathons {
-            padding: 0;
-        }
-
         .options {
             display: grid;
             grid-column: 1/2;
@@ -190,7 +217,6 @@ body {
     display: grid;
     grid-template-columns: auto 733px;
     background-color: #253131;
-    height: 718px;
 
     .info {
         margin-top: 170px;
@@ -220,8 +246,10 @@ body {
 
         .button_container {
             margin-top: 75px;
+            margin-bottom: 75px;
 
             .button {
+                display:inline-block;
                 background-color: #FDC332;
                 padding: 15px 40px;
                 text-decoration: none;
@@ -233,6 +261,7 @@ body {
     }
 
     .img {
+        margin-bottom: 20px;
         img {
             width: 733px;
         }
@@ -271,20 +300,21 @@ body {
 /*Наши марафоны*/
 .title__ourmarathons {
     text-align: center;
-    font-family: 'Montserrat', Times, sans-serif;
+    font-family: "Montserrat", Times, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #253131;
+    font-size: 48px;
     margin-top: 8%;
     margin-bottom: 50px;
 }
-
 .container__ourmarathons {
     margin-bottom: 8%;
     display: flex;
     flex-direction: row;
     max-width: 100%;
     justify-content: center;
-
 }
-
 .container__ourmarathons-running--img,
 .container__ourmarathons-cycling--img,
 .container__ourmarathons-swimming--img {
@@ -292,24 +322,22 @@ body {
     height: 100%;
     border-radius: 10px;
 }
-
 .container__ourmarathons-running,
 .container__ourmarathons-cycling,
 .container__ourmarathons-swimming {
     position: relative;
-    font-family: 'Montserrat', Times, sans-serif;
+    font-family: "Montserrat", Times, sans-serif;
     width: 30%;
-    color: rgb(36, 26, 26);
+    color: #253131;
     margin: 10px;
 }
-
 .button-running,
 .button-cycling,
 .button-swimming {
     position: absolute;
     font-size: 1.3vw;
     bottom: 1%;
-    left: 22.5%;
+    left: 24%;
     background-color: #253131;
     border: none;
     color: white;
@@ -320,7 +348,6 @@ body {
     text-decoration: none;
     display: inline-block;
 }
-
 .date-running,
 .date-cycling,
 .date-swimming {
@@ -328,63 +355,55 @@ body {
     font-size: 1.3vw;
     top: 2%;
     right: 2%;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
     color: white;
-    background-color: #253131;
-}
-
-@media screen and (max-width:1024px) {
+    background-color: #253131;} 
+@media screen and (min-width: 599px) {
     .container__ourmarathons {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-        justify-content: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
     }
-
     .container__ourmarathons-swimming,
     .container__ourmarathons-cycling,
     .container__ourmarathons-running {
-        width: 30%;
+    width: 40%;
     }
-
-    .date-running,
-    .date-cycling,
-    .date-swimming,
-    .button-running,
-    .button-cycling,
-    .button-swimming {
-        font-size: 1.3vw;
-    }
-}
-
-@media screen and (max-width:599px) {
-    .container__ourmarathons {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        justify-content: center;
-        margin-left: 17%;
-    }
-
-    .container__ourmarathons-swimming,
-    .container__ourmarathons-cycling,
-    .container__ourmarathons-running {
-        width: 75%;
-    }
-
-    .date-running,
-    .date-cycling,
-    .date-swimming,
-    .button-running,
-    .button-cycling,
-    .button-swimming {
-        font-size: 2.5vw;
+.date-running,
+.date-cycling,
+.date-swimming,
+.button-running,
+.button-cycling,
+.button-swimming {
+font-size: 1vw;
     }
 }
-
+@media screen and (max-width: 599px) {
+.container__ourmarathons {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    margin-left: 17%;
+    }
+.container__ourmarathons-swimming,
+.container__ourmarathons-cycling,
+.container__ourmarathons-running {
+    width: 75%;
+    }
+.date-running,
+.date-cycling,
+.date-swimming,
+.button-running,
+.button-cycling,
+.button-swimming {
+    font-size: 2.5vw;
+    }
+}
 
 /* Как принять участие */
 
@@ -493,7 +512,7 @@ body {
 }
 
 %image_width {
-    width: 60%;
+    width: 50%;
     object-fit: cover;
 }
 
@@ -551,16 +570,15 @@ body {
         background: $yellow-color;
         align-items: center;
         justify-content: space-evenly;
-        margin-bottom: 3vw;
     }
 
     .image__item1 {
-        width: 80%;
+        width: 70%;
     }
 
     .image__item2 {
         margin-top: 3vw;
-        width: 40%;
+        width: 70%;
     }
 
     .image__item3 {
@@ -573,8 +591,7 @@ body {
         grid-template-areas: "services__image services__text";
         grid-template-columns: 5fr 4fr;
         grid-template-rows: 1fr;
-        padding-right: 20px;
-        padding-left: 20px;
+
     }
 
     .services__image {
@@ -603,13 +620,14 @@ body {
     .services__image {
         align-items: flex-start;
         justify-content: space-between;
+        padding-left: 100px;
     }
 
     .image__item2 {
         width: 40%;
         position: absolute;
-        right: 2vw;
-        top: 7vw;
+        right: 8%;
+        top: 22%;
     }
 
     .image__item3 {
@@ -749,6 +767,11 @@ body {
     background-color: $swamp-color;
     padding-left: 20px;
     padding-top: 20px;
+}
+
+.footer__logo {
+    margin-left: 80px;
+    margin-right: 30px;
 }
 
 .footer__menu {
