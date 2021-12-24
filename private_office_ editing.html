@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/private_office.css">
+    <link rel="shortcut icon" href="./assets/images/runner.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto+Slab:wght@300&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Тэг, который помогает все блоки сделать флекс (см css) -->
+    <div class="wrapper">
+        <div class="body">
+            <div class="content_container">
+                <header class="shapka">
+                    <div class="logotype">
+                        <a href="index.html"><img class="logo" src="./assets/images/header_logo.svg" alt="logo" /></a>
+                    </div>
+                    <div class="options">
+                        <a class="marathons" href="/index.html#marathons_eli2">Наши марафоны</a>
+                        <a class="gallery" href="/gallery.html">Галерея</a>
+                        <a class="servicess" href="/index.html#unit6">Наши услуги</a>
+                    </div>
+                    <div class="personal_account">
+                        <a class="account" href="/private_office.html">Личный кабинет</a>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <main class="content">
+            <!-- Селектор body – можно переименовать, как вам удобно. Это блок, который будет в себе содержать контентную часть -->
+            <div class="body">
+                <div class="content_container">
+                    <div class="private_office">
+                        <input type="checkbox" id="nav-toggle" hidden>
+                        <nav class="private_office__nav">
+                            <label for="nav-toggle" class="nav-toggle" onclick></label>
+                            <ul>
+                                <li><a href="/private_office.html">Профиль</a></li>
+                                <li><a href="/pravate_office_registration.html">Регистрация</a></li>
+                                <li><a href="/pravate_office_result.html">Результаты</a></li>
+                                <li><a class="active" href="/private_office_ editing.html">Изменить профиль</a></li>
+                                <li><a href="/index.html">Выход</a></li>
+                            </ul>
+                        </nav>
+                        <div class="private_office__text">
+                            <h2 class="private_office-titleedit">Редактирование учётной записи</h2>
+                            <form class="private_office__editingform" action="#" method="post"
+                                enctype="multipart/form-data">
+                                <div class="private_office__row">
+                                    <div class="form__container">
+                                        <h5 class="form__subtitle">Персональные данные</h5>
+                                        <div class="form-row">
+                                            <label for="name">Имя</label>
+                                            <input type="text" name="name" value="" id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="surname">Фамилия</label>
+                                            <input type="text" name="surname" value="" id="surname" id="surname" />
+                                        </div>
+                                        <div class="form-row-radio">
+                                            <label for="sex">Пол</label>
+                                            <p><input type="radio" name="sex" value="m" id="sex" />Мужской</p>
+                                            <p><input type="radio" name="sex" value="f" id="sex" />Женский</p>
+                                        </div>
+                                    </div>
+                                    <div class="form__container">
+                                        <h5 class="form__subtitle">Контактная информация</h5>
+                                        <div class="form-row">
+                                            <label for="city">Город</label>
+                                            <input type="text" name="city" value="" id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="phone">Мобильный телефон</label>
+                                            <input type="tel" placeholder="+XXXXXXXXXXX" name="phone" value=""
+                                                id="name" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="phone2">Телефон для экстренной связи</label>
+                                            <input type="text" name="phone2" value="" placeholder="+XXXXXXXXXXX" />
+                                        </div>
+                                    </div>
+                                    <div class="form__container">
+                                        <h5 class="form__subtitle">Безопасность</h5>
+                                        <div class="form-row">
+                                            <label for="pass1">Старый пароль</label>
+                                            <input id="pass1" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="pass2">Новый пароль</label>
+                                            <input id="pass2" type="password" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="pass3">Повторите новый пароль</label>
+                                            <input id="pass2" type="password" name="pass" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="form__container">
+                                        <h5 class="form__subtitle">Почтовый адрес</h5>
+                                        <div class="form-row">
+                                            <label for="index">Почтовый индекс</label>
+                                            <input id="index" type="text" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="region">Область</label>
+                                            <input id="region" type="text" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="city">Город</label>
+                                            <input id="city" type="text" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="street">Улица</label>
+                                            <input id="street" type="text" name="pass" value="" />
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="bilding">Дом, квартира</label>
+                                            <input id="bilding" type="text" name="pass" value="" />
+                                        </div>
+                                        <button class="edit-btn" type="submit">Сохранить</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    </div>
+</body>
+
+</html>
