@@ -217,7 +217,6 @@ body {
     display: grid;
     grid-template-columns: auto 733px;
     background-color: #253131;
-    height: 718px;
 
     .info {
         margin-top: 170px;
@@ -247,8 +246,10 @@ body {
 
         .button_container {
             margin-top: 75px;
+            margin-bottom: 75px;
 
             .button {
+                display:inline-block;
                 background-color: #FDC332;
                 padding: 15px 40px;
                 text-decoration: none;
@@ -260,6 +261,7 @@ body {
     }
 
     .img {
+        margin-bottom: 20px;
         img {
             width: 733px;
         }
