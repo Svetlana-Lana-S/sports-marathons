@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../Documents/GitHub/ITgirls"
+		},
+		{
+			"path": "../../../Website_architects"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sports-marathons"
+	}
+}
