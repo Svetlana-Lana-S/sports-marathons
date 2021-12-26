@@ -634,7 +634,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .services {
-        grid-template-areas: "services__text" "services__image";
+        grid-template-areas: "services__text" "services__image";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1.5fr;
