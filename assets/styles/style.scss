@@ -30,8 +30,8 @@ body {
 }
 
 .grid-container-result .mobile-result {
-   max-width: 100%;
-   max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .grid-container-result-mobile {
@@ -63,8 +63,8 @@ body {
 }
 
 
-@media screen and (max-width: 778px){
-    .grid-container-result{
+@media screen and (max-width: 778px) {
+    .grid-container-result {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -75,24 +75,25 @@ body {
         max-height: 350px;
     }
 
-    .grid-container-result h3{
-    text-align: center;
+    .grid-container-result h3 {
+        text-align: center;
     }
 
-    .grid-container-result-text p{
+    .grid-container-result-text p {
         text-align: center;
     }
 }
 
-@media screen and (max-width: 500px){
-    .grid-container-result-text{
+@media screen and (max-width: 500px) {
+    .grid-container-result-text {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .grid-container-result h3{
+
+    .grid-container-result h3 {
         font-size: 35px;
         line-height: 42px;
-        }
+    }
 }
 
 
@@ -196,6 +197,7 @@ body {
             justify-content: end;
             margin-right: 25px;
         }
+
         .options {
             display: grid;
             grid-column: 1/2;
@@ -249,7 +251,7 @@ body {
             margin-bottom: 75px;
 
             .button {
-                display:inline-block;
+                display: inline-block;
                 background-color: #FDC332;
                 padding: 15px 40px;
                 text-decoration: none;
@@ -262,6 +264,7 @@ body {
 
     .img {
         margin-bottom: 20px;
+
         img {
             width: 733px;
         }
@@ -308,6 +311,7 @@ body {
     margin-top: 8%;
     margin-bottom: 50px;
 }
+
 .container__ourmarathons {
     margin-bottom: 8%;
     display: flex;
@@ -315,6 +319,7 @@ body {
     max-width: 100%;
     justify-content: center;
 }
+
 .container__ourmarathons-running--img,
 .container__ourmarathons-cycling--img,
 .container__ourmarathons-swimming--img {
@@ -322,6 +327,7 @@ body {
     height: 100%;
     border-radius: 10px;
 }
+
 .container__ourmarathons-running,
 .container__ourmarathons-cycling,
 .container__ourmarathons-swimming {
@@ -331,6 +337,7 @@ body {
     color: #253131;
     margin: 10px;
 }
+
 .button-running,
 .button-cycling,
 .button-swimming {
@@ -348,6 +355,7 @@ body {
     text-decoration: none;
     display: inline-block;
 }
+
 .date-running,
 .date-cycling,
 .date-swimming {
@@ -360,48 +368,55 @@ body {
     padding-right: 2%;
     text-align: center;
     color: white;
-    background-color: #253131;} 
+    background-color: #253131;
+}
+
 @media screen and (min-width: 599px) {
     .container__ourmarathons {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: center;
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: center;
     }
+
     .container__ourmarathons-swimming,
     .container__ourmarathons-cycling,
     .container__ourmarathons-running {
-    width: 40%;
+        width: 40%;
     }
-.date-running,
-.date-cycling,
-.date-swimming,
-.button-running,
-.button-cycling,
-.button-swimming {
-font-size: 1vw;
+
+    .date-running,
+    .date-cycling,
+    .date-swimming,
+    .button-running,
+    .button-cycling,
+    .button-swimming {
+        font-size: 1vw;
     }
 }
+
 @media screen and (max-width: 599px) {
-.container__ourmarathons {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    margin-left: 17%;
+    .container__ourmarathons {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        margin-left: 17%;
     }
-.container__ourmarathons-swimming,
-.container__ourmarathons-cycling,
-.container__ourmarathons-running {
-    width: 75%;
+
+    .container__ourmarathons-swimming,
+    .container__ourmarathons-cycling,
+    .container__ourmarathons-running {
+        width: 75%;
     }
-.date-running,
-.date-cycling,
-.date-swimming,
-.button-running,
-.button-cycling,
-.button-swimming {
-    font-size: 2.5vw;
+
+    .date-running,
+    .date-cycling,
+    .date-swimming,
+    .button-running,
+    .button-cycling,
+    .button-swimming {
+        font-size: 2.5vw;
     }
 }
 
@@ -955,8 +970,9 @@ font-size: 1vw;
 }
 
 @media screen and (min-width:1024px) and (max-width:1366px) {
-    .gallery__background {
-        display: none;
+    .gallery__comments__images {
+        display: flex;
+        flex-direction: column;
     }
 }
 

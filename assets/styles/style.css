@@ -1064,8 +1064,14 @@ body {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .gallery__background {
-    display: none;
+  .gallery__comments__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
