@@ -634,7 +634,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .services {
-        grid-template-areas: "services__text" "services__image";
+        grid-template-areas: "services__text" "services__image";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1.5fr;
@@ -1060,6 +1060,18 @@ body {
 @media screen and (max-width: 576px) {
   .gallery__comments {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .gallery__comments__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
