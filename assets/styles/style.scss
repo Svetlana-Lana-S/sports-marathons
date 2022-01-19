@@ -976,6 +976,12 @@ body {
     }
 }
 
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .gallery__comments__images {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 /*form*/
